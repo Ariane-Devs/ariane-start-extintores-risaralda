@@ -2,11 +2,11 @@
 const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Productos", url: "/products" },
-  { name: "Servicios", url: "/services" },
-  { name: "Blog", url: "/blog" },
+  // { name: "Servicios", url: "/services" },
+  // { name: "Blog", url: "/blog" },
   { name: "Contactanos", url: "/contact" },
 ];
-// An array of links for footer
+
 const footerLinks = [
   {
     section: "Ecosystem",

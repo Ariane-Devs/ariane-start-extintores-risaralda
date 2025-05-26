@@ -9,14 +9,14 @@ import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/extintor.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
 import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import construction from "@images/post3.png";
+import tools from "@images/post1.png";
+import dashboard from "@images/post2.png";
 import { partnersData } from "@/data_files/constants";
 
 const avatarSrcs: Array<string> = [
@@ -35,12 +35,12 @@ const avatarSrcs: Array<string> = [
   />
 
   <HeroSection
-    title=`SOMOS PIONEROS CON MAS DE <span
-        class="text-yellow-500 dark:text-yellow-400"> 20 AÑOS EN EL MERCADO.</span>`
-    subTitle="EXPLORA NUESTRA GAMA DE SOLUCIONES PARA EMERGENCIAS Y PROTECCION PERSONAL. ¡ACTUA HOY Y ASEGURATE UN FUTURO MAS SEGURO!"
-    primaryBtn="Explora los productos"
+    title=`Protección Contra Incendios y <span
+        class="text-[#2e7d32] dark:text-yellow-400"> Primeros Auxilios para Todos los Sectores.</span>`
+    subTitle="Equipos certificados, atención rápida y soluciones integrales desde el corazón del Eje Cafetero."
+    primaryBtn="Ver Productos"
     primaryBtnURL="/products"
-    secondaryBtn="Ordena ya"
+    secondaryBtn="Contáctanos"
     secondaryBtnURL="/contact"
     withReview={true}
     avatars={avatarSrcs}

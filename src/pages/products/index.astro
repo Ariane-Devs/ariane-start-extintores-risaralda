@@ -23,9 +23,9 @@ const product: CollectionEntry<"products">[] = (
 );
 
 // Define variables for page content
-const title: string = "Products";
+const title: string = "Productos";
 const subTitle: string =
-  "Explore the durability and precision of Extintoresdelrisaralda tools, designed for both professionals and enthusiasts. Each of our products is crafted with precision and built to last, ensuring you have the right tool for every job.";
+  "Descubra el rendimiento confiable de los extintores de Extintoresdelrisaralda, esenciales tanto para profesionales como para la seguridad del hogar. Cada extintor está fabricado con los más altos estándares, lo que garantiza su funcionamiento eficaz cuando más se necesita.";
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
@@ -107,7 +107,6 @@ const ogTitle = "Hardware Tools | Extintoresdelrisaralda";
           )
         }
       </div>
-      <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
     </div>
     {/* Displaying products in alternating styles. Alternative product gets different card styling.
     Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
@@ -125,18 +124,5 @@ const ogTitle = "Hardware Tools | Extintoresdelrisaralda";
     </section>
   </div>
   {/* Features statistics section */}
-  <FeaturesStatsAlt
-    title="Why Choose Extintoresdelrisaralda?"
-    subTitle="Transform your ideas into tangible results with Extintoresdelrisaralda tools. Whether you're starting with a sketch on a napkin or diving into a comprehensive construction project, our tools are engineered to help you build with confidence."
-    benefits={[
-      "Robust and reliable tools for long-lasting performance.",
-      "Innovative solutions tailored to modern construction needs.",
-      "Customer support dedicated to your project's success.",
-    ]}
-  />
-  {/* Testimonials section */}
-  <TestimonialsSectionAlt
-    title="What Our Customers Say"
-    testimonials={testimonials}
-  />
+  
 </MainLayout>

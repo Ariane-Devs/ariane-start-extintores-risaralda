@@ -1,6 +1,7 @@
 ---
 title: "Cinta Antideslizante de Seguridad"
 description: "Prevención de Caídas y Mayor Tracción en Superficies"
+line: "Línea de demarcación y señalización"
 main:
   id: 401
   content: |

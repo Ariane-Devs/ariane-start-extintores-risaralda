@@ -1,6 +1,7 @@
 ---
 title: "Camilla de Emergencia Completa"
 description: "Camilla con Arnés, Inmovilizador, Soporte y Señal"
+line: "Línea de primeros auxilios"
 main:
   id: 201
   content: |

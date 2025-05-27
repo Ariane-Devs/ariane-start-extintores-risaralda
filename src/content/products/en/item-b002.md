@@ -1,6 +1,7 @@
 ---
 title: "Botiquín de Primeros Auxilios Esencial"
 description: "Kit Completo para Emergencias y Cuidado Básico"
+line: "Línea de primeros auxilios"
 main:
   id: 301
   content: |

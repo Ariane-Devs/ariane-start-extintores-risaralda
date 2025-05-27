@@ -1,6 +1,7 @@
 ---
 title: "Cinta de Demarcación de Seguridad"
 description: "Delimitación y Organización de Áreas Clave"
+line: "Línea de demarcación y señalización"
 main:
   id: 501
   content: |

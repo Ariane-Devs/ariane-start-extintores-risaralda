@@ -1,6 +1,7 @@
 ---
 title: "Extintor Fuego"
 description: "Extintor para Control de Incendios"
+line: "Línea de control de incendios"
 main:
   id: 101
   content: |

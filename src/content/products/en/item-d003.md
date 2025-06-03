@@ -55,7 +55,7 @@ tableData:
       - ["Incluye", "Herramientas básicas para emergencias"]
       - ["Uso Recomendado", "Vehículos particulares y comerciales"]
 blueprints:
-  first: "@/images/blueprint-d-03-1.avif"
-  second: "@/images/blueprint-d-03-2.avif"
+  first: "@/images/products/d-03.avif"
+  second: "@/images/products/d-03.avif"
 ---
 

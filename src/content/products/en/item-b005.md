@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Botiquín Tipo A** – la solución fundamental para la atención inmediata de emergencias menores. Parte indispensable de nuestra **Línea de Primeros Auxilios**, este kit compacto contiene una selección de 14 productos esenciales, cuidadosamente elegidos para brindar una respuesta rápida y efectiva en el hogar, la oficina o el vehículo.
 
-  imgCard: "@/images/products/botiquin-tipo-a-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/botiquin-tipo-a-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Botiquín de primeros auxilios tipo A con 14 productos"
+  imgCard: "@/images/products/b-05.avif"
+  imgMain: "@/images/products/b-05.avif"
+  imgAlt: "Botiquín Tipo A"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -61,6 +61,6 @@ tableData:
       - ["Uso Recomendado", "Hogar, Oficina Pequeña, Vehículo"]
       - ["Material del Estuche", "Plástico resistente / Tela"]
 blueprints:
-  first: "@/images/blueprint-botiquin-a-1.avif" # Diagrama del botiquín abierto
-  second: "@/images/blueprint-botiquin-a-2.avif" # Vista del botiquín cerrado
+  first: "@/images/products/b-05.avif"
+  second: "@/images/products/b-05.avif"
 ---

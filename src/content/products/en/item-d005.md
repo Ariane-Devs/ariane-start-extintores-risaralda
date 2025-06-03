@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-05.avif"
   imgMain: "@/images/products/d-05.avif"
   imgAlt: "Chaleco reflectivo para carretera"
+  first: "@/images/products/d-05.avif"
+  second: "@/images/products/d-05.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,7 +53,7 @@ tableData:
       - ["Color", "Amarillo neón / Naranja"]
       - ["Uso Recomendado", "Seguridad vial y emergencias"]
 blueprints:
-  first: "@/images/blueprint-d-05-1.avif"
-  second: "@/images/blueprint-d-05-2.avif"
+  first: "@/images/products/d-05.avif"
+  second: "@/images/products/d-05.avif"
 ---
 

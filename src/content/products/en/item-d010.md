@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-10.avif"
   imgMain: "@/images/products/d-10.avif"
   imgAlt: "Cono retráctil para carretera en diferentes tamaños"
+  first: "@/images/products/d-10.avif"
+  second: "@/images/products/d-10.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -52,7 +54,7 @@ tableData:
       - ["45 cm", "$90.000"]
       - ["60 cm", "$120.000"]
 blueprints:
-  first: "@/images/blueprint-d-10-1.avif"
-  second: "@/images/blueprint-d-10-2.avif"
+  first: "@/images/products/d-10.avif"
+  second: "@/images/products/d-10.avif"
 ---
 

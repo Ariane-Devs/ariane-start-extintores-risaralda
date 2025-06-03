@@ -7,8 +7,8 @@ main:
   content: |
     Presentamos nuestra **Camilla de Emergencia Completa** – la solución integral para el traslado seguro de pacientes. Este equipo esencial de nuestra **Línea de Primeros Auxilios** incluye una camilla robusta, arnés de sujeción, inmovilizador de cuello, soporte estable y señal de advertencia para garantizar una atención y transporte seguros en cualquier situación de emergencia.
 
-  imgCard: "@/images/products/b-01.avif" 
-  imgMain: "@/images/products/b-01.avif" 
+  imgCard: "@/images/products/b-01.avif"
+  imgMain: "@/images/products/b-01.avif"
   imgAlt: "Camilla de emergencia completa con accesorios"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -53,6 +53,6 @@ tableData:
       - ["Peso Máximo (kg)", "[Especificar Peso Máximo]"]
       - ["Accesorios Incluidos", "Arnés, Inmovilizador de Cuello, Soporte, Señal"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/b-01.avif"
+  second: "@/images/products/b-01.avif" 
 ---

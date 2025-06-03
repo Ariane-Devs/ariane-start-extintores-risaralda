@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Bolso Morral Grande** – la solución versátil y espaciosa para tus necesidades de seguridad y primeros auxilios. Parte de nuestra **Línea de Primeros Auxilios**, este morral de lona resistente ofrece una amplia capacidad para guardar y transportar dotaciones más completas o equipos de mayor tamaño, ideal para brigadistas, equipos de rescate o para tener en sitios estratégicos.
 
-  imgCard: "@/images/products/bolso-morral-grande-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/bolso-morral-grande-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Bolso morral grande para equipos de seguridad y primeros auxilios"
+  imgCard: "@/images/products/b-08.avif"
+  imgMain: "@/images/products/b-08.avif"
+  imgAlt: "Bolso Morral Grande"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Precio (COP)", "$60.000"]
       - ["Uso Recomendado", "Brigadistas, Empresas, Equipos de Rescate"]
 blueprints:
-  first: "@/images/blueprint-morral-grande-1.avif" # Diagrama del morral grande abierto
-  second: "@/images/blueprint-morral-grande-2.avif" # Vista del morral grande cerrado
+  first: "@/images/products/b-08.avif"
+  second: "@/images/products/b-08.avif"
 ---

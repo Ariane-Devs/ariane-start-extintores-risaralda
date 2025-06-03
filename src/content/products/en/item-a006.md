@@ -3,12 +3,12 @@ title: "Extintor Satélite"
 description: "Unidad Móvil de Alta Capacidad para Grandes Áreas"
 line: "Línea de control de incendios"
 main:
-  id: 105 # ID único para este producto
+  id: 105
   content: |
     Presentamos nuestro **Extintor Satélite** – una robusta unidad móvil de alta capacidad diseñada para la protección de grandes áreas y riesgos de incendio elevados. Este equipo esencial de nuestra **Línea de Control de Incendios** proporciona una capacidad de extinción superior, siendo fácil de transportar y operar en emergencias críticas.
 
-  imgCard: "@/images/products/a-02.avif" 
-  imgMain: "@/images/products/a-02.avif"
+  imgCard: "@/images/products/a-06.avif" 
+  imgMain: "@/images/products/a-06.avif"
   imgAlt: "Extintor satélite o sobre ruedas de alta capacidad"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Material del Cilindro", "Acero de alta resistencia (sin costura para CO2)"]
       - ["Ruedas", "De goma maciza de gran diámetro"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/a-06.avif"
+  second: "@/images/products/a-06.avif" 
 ---

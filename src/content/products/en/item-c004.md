@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestra **Cinta de Precaución** – la herramienta esencial para señalizar y delimitar áreas de riesgo de forma rápida y efectiva. Parte indispensable de nuestra **Línea de Demarcación y Señalización**, esta cinta de alta visibilidad es ideal para advertir sobre peligros, restringir el acceso o guiar el tráfico peatonal en zonas de construcción, eventos o cualquier situación que requiera atención inmediata.
 
-  imgCard: "@/images/products/cinta-precaucion-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/cinta-precaucion-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Cinta de precaución amarilla y negra"
+  imgCard: "@/images/products/c-04.avif"
+  imgMain: "@/images/products/c-04.avif"
+  imgAlt: "Cinta de Precaución"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Precios (COP)", "$25.000 (100m), $35.000 (500m)"]
       - ["Uso Recomendado", "Construcción, Eventos, Mantenimiento, Áreas de Riesgo"]
 blueprints:
-  first: "@/images/blueprint-cinta-precaucion-1.avif" # Diagrama de la cinta en uso
-  second: "@/images/blueprint-cinta-precaucion-2.avif" # Detalle del material o rollo
+  first: "@/images/products/c-04.avif"
+  second: "@/images/products/c-04.avif"
 ---

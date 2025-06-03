@@ -7,9 +7,11 @@ main:
   content: |
     Presentamos nuestra **Base Matero para Extintor** – la solución práctica y estética para ubicar tu extintor en el suelo de forma visible y segura. Parte de nuestra **Línea de Control de Incendios**, esta base protege el extintor del contacto directo con el piso y ofrece la opción de incluir una señal de seguridad vertical para máxima visibilidad.
 
-  imgCard: "@/images/products/base-matero-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/base-matero-main.avif" # Sugerencia de imagen principal
+  imgCard: "@/images/products/c-10.avif" # Sugerencia de imagen para la tarjeta
+  imgMain: "@/images/products/c-10.avif" # Sugerencia de imagen principal
   imgAlt: "Base matero para extintor con o sin señal"
+  first: "@/images/products/c-10.avif" # Diagrama de la base matero sin señal
+  second: "@/images/products/c-10.avif" # Diagrama de la base matero con señal
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -52,20 +54,8 @@ tableData:
       - ["Precios (COP)", "$40.000 (sin señal), $45.000 (con señal)"]
       - ["Uso Recomendado", "Oficinas, Comercios, Lobby, Áreas Comunes"]
       - ["Características", "Opción de señal vertical"]
-blueprints:
-  first: "@/images/blueprint-matero-1.avif" # Diagrama de la base matero sin señal
-  second: "@/images/blueprint-matero-2.avif" # Diagrama de la base matero con señal
----
-mira como estan los items, de la a a la c y vamos a editar los items con la d; estos  son la linea para carretera
 
-y tengo los siguientes:
- Kit de carretera $75.000
- Maletin para kit de carretera $15.000
- Kit de herramientas $40.000
- Par de tacos de madera $12.000
- Chaleco reflectivo $12.000
- Par de conos para kit $12.000
- Linterna dinamo $15.000
- Cono PVC xPar 20 cm $40.000 33 cm $55.000 45 cm $90.000 70 cm $150.000 90 cm $200.000
- Colombina vial $70.000
- Cono retractil xPar 30 cm $60.000 45 cm $90.000 60 cm $120.000
+blueprints:
+  first: "@/images/products/c-10.avif"
+  second: "@/images/products/c-10.avif"
+---

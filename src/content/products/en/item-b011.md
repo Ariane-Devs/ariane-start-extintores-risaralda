@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Botiquín Caja Plástica Rimax** – la solución robusta y confiable para almacenar tus insumos de primeros auxilios. Parte esencial de nuestra **Línea de Primeros Auxilios**, este estuche de alta resistencia, fabricado por Rimax, protege tu dotación del polvo y la humedad, asegurando que esté siempre lista para cualquier emergencia.
 
-  imgCard: "@/images/products/botiquin-rimax-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/botiquin-rimax-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Botiquín en caja plástica Rimax"
+  imgCard: "@/images/products/b-11.avif"
+  imgMain: "@/images/products/b-11.avif"
+  imgAlt: "Botiquín Caja Plástica Rimax"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -53,6 +53,6 @@ tableData:
       - ["Precios (COP)", "$50.000, $70.000"]
       - ["Material del Estuche", "Plástico"]
 blueprints:
-  first: "@/images/blueprint-rimax-1.avif" # Diagrama de la caja abierta
-  second: "@/images/blueprint-rimax-2.avif" # Vista de la caja cerrada con dimensiones
+  first: "@/images/products/b-11.avif"
+  second: "@/images/products/b-11.avif"
 ---

@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-07.avif"
   imgMain: "@/images/products/d-07.avif"
   imgAlt: "Linterna dinamo para carretera"
+  first: "@/images/products/d-07.avif"
+  second: "@/images/products/d-07.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,7 +53,7 @@ tableData:
       - ["Recarga", "Dinamo manual"]
       - ["Uso Recomendado", "Emergencias y cortes de energía"]
 blueprints:
-  first: "@/images/blueprint-d-07-1.avif"
-  second: "@/images/blueprint-d-07-2.avif"
+  first: "@/images/products/d-07.avif"
+  second: "@/images/products/d-07.avif"
 ---
 

@@ -51,7 +51,6 @@ tableData:
       - ["Dimensiones", "15x8x8 cm aprox."]
       - ["Uso Recomendado", "Estacionamiento y cambio de llantas"]
 blueprints:
-  first: "@/images/blueprint-d-04-1.avif"
-  second: "@/images/blueprint-d-04-2.avif"
+  first: "@/images/products/d-04.avif"
+  second: "@/images/products/d-04.avif"
 ---
-

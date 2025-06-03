@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Bolso Morral Mediano** – la solución versátil que equilibra perfectamente la portabilidad con una capacidad generosa para tus necesidades de seguridad y primeros auxilios. Parte de nuestra **Línea de Primeros Auxilios**, este morral de lona resistente es ideal para una dotación estándar o equipos esenciales, fácil de transportar y almacenar en diversos entornos.
 
-  imgCard: "@/images/products/bolso-morral-mediano-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/bolso-morral-mediano-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Bolso morral mediano para equipos de seguridad y primeros auxilios"
+  imgCard: "@/images/products/b-09.avif"
+  imgMain: "@/images/products/b-09.avif"
+  imgAlt: "Bolso Morral Mediano"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Precio (COP)", "$50.000"]
       - ["Uso Recomendado", "Vehículos, Pequeñas Oficinas, Actividades al aire libre"]
 blueprints:
-  first: "@/images/blueprint-morral-mediano-1.avif" # Diagrama del morral mediano abierto
-  second: "@/images/blueprint-morral-mediano-2.avif" # Vista del morral mediano cerrado
+  first: "@/images/products/b-09.avif"
+  second: "@/images/products/b-09.avif"
 ---

@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-02.avif"
   imgMain: "@/images/products/d-02.avif"
   imgAlt: "Maletín para kit de carretera"
+  first: "@/images/products/d-02.avif"
+  second: "@/images/products/d-02.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,7 +53,7 @@ tableData:
       - ["Dimensiones", "40x20x15 cm aprox."]
       - ["Uso Recomendado", "Transporte y protección de elementos viales"]
 blueprints:
-  first: "@/images/blueprint-d-02-1.avif"
-  second: "@/images/blueprint-d-02-2.avif"
+  first: "@/images/products/d-02.avif"
+  second: "@/images/products/d-02.avif"
 ---
 

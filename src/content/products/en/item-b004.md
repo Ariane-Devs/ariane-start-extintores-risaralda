@@ -7,8 +7,8 @@ main:
   content: |
     Presentamos nuestro **Botiquín Morral para Brigadista** – la solución ideal para la atención rápida y eficiente en cualquier emergencia. Parte esencial de nuestra **Línea de Primeros Auxilios**, este morral de lona resistente viene completamente dotado con insumos de alta calidad, diseñado para la movilidad y respuesta ágil de brigadistas y personal capacitado.
 
-  imgCard: "@/images/products/b-02.avif" 
-  imgMain: "@/images/products/b-02.avif" 
+  imgCard: "@/images/products/b-02.avif"
+  imgMain: "@/images/products/b-02.avif"
   imgAlt: "Botiquín morral de primeros auxilios para brigadistas"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -66,6 +66,6 @@ tableData:
       - ["Peso (vacío/dotado)", "Variable (ej. 1 kg vacío / 3-5 kg dotado)"]
       - ["Cumple Normativa", "Resolución 0705 de 2007 (Ministerio de Protección Social de Colombia) / Otras normativas"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/b-02.avif"
+  second: "@/images/products/b-02.avif"
 ---

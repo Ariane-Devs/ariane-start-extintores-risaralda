@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Bolso Morral Mini** – la solución ultra-portátil y versátil para tus necesidades de primeros auxilios o para llevar tus esenciales de seguridad. Parte de nuestra **Línea de Primeros Auxilios**, este pequeño morral de lona es perfecto para guardar y transportar de forma discreta una dotación básica o equipos personales, ideal para el día a día.
 
-  imgCard: "@/images/products/bolso-morral-mini-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/bolso-morral-mini-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Bolso morral mini para primeros auxilios o accesorios"
+  imgCard: "@/images/products/b-07.avif"
+  imgMain: "@/images/products/b-07.avif"
+  imgAlt: "Bolso Morral Mini"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Precio (COP)", "$40.000"]
       - ["Uso Recomendado", "Kit personal, Viajes, Mochila diaria"]
 blueprints:
-  first: "@/images/blueprint-morral-mini-1.avif" # Diagrama del bolso abierto
-  second: "@/images/blueprint-morral-mini-2.avif" # Vista del bolso en uso (ej. colgado, en una mano)
+  first: "@/images/products/b-07.avif"
+  second: "@/images/products/b-07.avif"
 ---

@@ -7,9 +7,11 @@ main:
   content: |
     Presentamos nuestro **Soporte Metálico de Pared en L** – la solución práctica y duradera para fijar de forma segura extintores, mangueras o pequeños equipos a la pared. Parte fundamental de nuestra **Línea de Control de Incendios**, este soporte discreto y resistente asegura que tus equipos estén siempre en su lugar, visibles y listos para usar en caso de emergencia.
 
-  imgCard: "@/images/products/soporte-pared-l-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/soporte-pared-l-main.avif" # Sugerencia de imagen principal
+  imgCard: "@/images/products/c-08.avif" # Sugerencia de imagen para la tarjeta
+  imgMain: "@/images/products/c-08.avif" # Sugerencia de imagen principal
   imgAlt: "Soporte metálico de pared en forma de L"
+  first: "@/images/products/c-08.avif" # Diagrama del soporte con medidas
+  second: "@/images/products/c-08.avif" # Ejemplo del soporte con un extintor
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +53,6 @@ tableData:
       - ["Precio (COP)", "$7.000"]
       - ["Uso Recomendado", "Soporte de extintores, mangueras, equipos"]
 blueprints:
-  first: "@/images/blueprint-soporte-l-1.avif" # Diagrama del soporte con medidas
-  second: "@/images/blueprint-soporte-l-2.avif" # Ejemplo del soporte con un extintor
+  first: "@/images/products/c-08.avif" # Diagrama del soporte con medidas
+  second: "@/images/products/c-08.avif" # Ejemplo del soporte con un extintor
 ---

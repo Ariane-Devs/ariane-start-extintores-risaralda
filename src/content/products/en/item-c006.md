@@ -7,8 +7,8 @@ main:
   content: |
     Presentamos nuestra **Señal Fotoluminiscente de 15x30 cm** – la solución indispensable para la seguridad en entornos con riesgo de pérdida de luz. Parte esencial de nuestra **Línea de Demarcación y Señalización**, esta señal absorbe la luz ambiental y la emite en la oscuridad, guiando de forma clara rutas de evacuación, identificando equipos de emergencia o señalando peligros cuando más se necesita.
 
-  imgCard: "@/images/products/senal-fotoluminiscente-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/senal-fotoluminiscente-main.avif" # Sugerencia de imagen principal
+  imgCard: "@/images/products/c-06.avif" # Sugerencia de imagen para la tarjeta
+  imgMain: "@/images/products/c-06.avif" # Sugerencia de imagen principal
   imgAlt: "Señal fotoluminiscente de seguridad (15x30 cm)"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Material", "PVC / Estireno Fotoluminiscente"]
       - ["Aplicación", "Rutas de Evacuación, Salidas, Equipos de Emergencia"]
 blueprints:
-  first: "@/images/blueprint-senal-fotoluminiscente-1.avif" # Diagrama de la señal con medidas
-  second: "@/images/blueprint-senal-fotoluminiscente-2.avif" # Ejemplo de la señal brillando en la oscuridad
+  first: "@/images/products/c-06.avif"
+  second: "@/images/products/c-06.avif"
 ---

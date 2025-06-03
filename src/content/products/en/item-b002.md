@@ -8,8 +8,8 @@ main:
     Presentamos nuestro **Botiquín de Primeros Auxilios Esencial** – tu aliado indispensable para la atención inmediata en cualquier situación de emergencia. Este kit, parte fundamental de nuestra **Línea de Primeros Auxilios**, incluye una cuidadosa selección de insumos básicos y herramientas diseñadas para brindar una respuesta rápida y efectiva.
 
 
-  imgCard: "@/images/products/b-02.avif" 
-  imgMain: "@/images/products/b-02.avif" 
+  imgCard: "@/images/products/b-02.avif"
+  imgMain: "@/images/products/b-02.avif"
   imgAlt: "Botiquín de primeros auxilios completo y portátil"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -54,6 +54,6 @@ tableData:
       - ["Peso (kg)", "[Especificar Peso]"]
       - ["Certificaciones", "[Mencionar si tiene, ej., Cumple normas INVIMA para insumos]"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/b-02.avif"
+  second: "@/images/products/b-02.avif"
 ---

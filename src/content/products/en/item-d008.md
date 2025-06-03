@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-08.avif"
   imgMain: "@/images/products/d-08.avif"
   imgAlt: "Conos de PVC para carretera en diferentes tamaños"
+  first: "@/images/products/d-08.avif"
+  second: "@/images/products/d-08.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -56,7 +58,7 @@ tableData:
       - ["70 cm", "$150.000"]
       - ["90 cm", "$200.000"]
 blueprints:
-  first: "@/images/blueprint-d-08-1.avif"
-  second: "@/images/blueprint-d-08-2.avif"
+  first: "@/images/products/d-08.avif"
+  second: "@/images/products/d-08.avif"
 ---
 

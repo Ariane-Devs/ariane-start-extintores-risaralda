@@ -7,9 +7,11 @@ main:
   content: |
     Presentamos nuestra **Canastilla Metálica para Extintor de 10 lb** – la solución perfecta para mantener tu extintor en un lugar visible y seguro, sin necesidad de fijación a la pared. Parte esencial de nuestra **Línea de Control de Incendios**, esta canastilla eleva el equipo del suelo, protegiéndolo de la humedad y golpes, a la vez que asegura su fácil acceso y señalización.
 
-  imgCard: "@/images/products/canastilla-metalica-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/canastilla-metalica-main.avif" # Sugerencia de imagen principal
+  imgCard: "@/images/products/c-09.avif" # Sugerencia de imagen para la tarjeta
+  imgMain: "@/images/products/c-09.avif" # Sugerencia de imagen principal
   imgAlt: "Canastilla metálica para extintor de 10 lb"
+  first: "@/images/products/c-09.avif" # Diagrama de la canastilla con medidas
+  second: "@/images/products/c-09.avif" # Ejemplo de la canastilla con un extintor
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +53,6 @@ tableData:
       - ["Precio (COP)", "$40.000"]
       - ["Acabado", "Pintura electrostática"]
 blueprints:
-  first: "@/images/blueprint-canastilla-1.avif" # Diagrama de la canastilla con medidas
-  second: "@/images/blueprint-canastilla-2.avif" # Ejemplo de la canastilla con un extintor
+  first: "@/images/products/c-09.avif" # Diagrama de la canastilla con medidas
+  second: "@/images/products/c-09.avif" # Ejemplo de la canastilla con un extintor
 ---

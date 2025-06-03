@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Gabinete Metálico para Extintor de 10 lb** – la solución ideal para proteger y señalizar adecuadamente tus equipos contra incendios. Parte vital de nuestra **Línea de Control de Incendios**, este gabinete no solo resguarda tu extintor de daños y vandalismo, sino que también asegura su visibilidad y fácil acceso en caso de emergencia, incluyendo el servicio de instalación profesional.
 
-  imgCard: "@/images/products/gabinete-metalico-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/gabinete-metalico-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Gabinete metálico para extintor de 10 lb"
+  imgCard: "@/images/products/b-12.avif"
+  imgMain: "@/images/products/b-12.avif"
+  imgAlt: "Gabinete Metálico para Extintor (10 lb)"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -53,6 +53,6 @@ tableData:
       - ["Precio (COP)", "$100.000 (Incluye instalación)"]
       - ["Acabado", "Pintura electrostática"]
 blueprints:
-  first: "@/images/blueprint-gabinete-1.avif" # Diagrama del gabinete abierto/cerrado
-  second: "@/images/blueprint-gabinete-2.avif" # Vista del gabinete instalado en una pared
+  first: "@/images/products/b-12.avif"
+  second: "@/images/products/b-12.avif"
 ---

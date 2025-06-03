@@ -7,8 +7,8 @@ main:
   content: |
     Presentamos nuestro **Extintor de CO2** – la solución ideal para proteger equipos electrónicos, líquidos inflamables y maquinaria delicada. Este equipo, parte esencial de nuestra **Línea de Control de Incendios**, utiliza dióxido de carbono para extinguir el fuego por desplazamiento de oxígeno, sin dejar residuos ni daños colaterales.
 
-  imgCard: "@/images/products/a-02.avif" 
-  imgMain: "@/images/products/a-02.avif"
+  imgCard: "@/images/products/a-07.avif" 
+  imgMain: "@/images/products/a-07.avif"
   imgAlt: "Extintor de Dióxido de Carbono (CO2)"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -59,6 +59,6 @@ tableData:
       - ["Material del Cilindro", "Aleación de acero (alta presión)"]
       - ["Válvula", "Latón con boquilla difusora tipo corneta"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/a-07.avif"
+  second: "@/images/products/a-07.avif" 
 ---

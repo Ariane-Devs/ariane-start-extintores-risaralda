@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-06.avif"
   imgMain: "@/images/products/d-06.avif"
   imgAlt: "Par de conos pequeños para kit de carretera"
+  first: "@/images/products/d-06.avif"
+  second: "@/images/products/d-06.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,7 +53,7 @@ tableData:
       - ["Dimensiones", "20 cm de alto"]
       - ["Uso Recomendado", "Emergencias y señalización temporal"]
 blueprints:
-  first: "@/images/blueprint-d-06-1.avif"
-  second: "@/images/blueprint-d-06-2.avif"
+  first: "@/images/products/d-06.avif"
+  second: "@/images/products/d-06.avif"
 ---
 

@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestra **Señal Genérica de Seguridad de 15x30 cm** – la herramienta ideal para comunicar mensajes importantes de forma clara y visible. Parte esencial de nuestra **Línea de Demarcación y Señalización**, estas señales son fundamentales para indicar rutas, identificar equipos, señalar prohibiciones o advertir sobre riesgos, mejorando la seguridad y la organización en cualquier espacio.
 
-  imgCard: "@/images/products/senal-generica-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/senal-generica-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Señal genérica de seguridad (15x30 cm)"
+  imgCard: "@/images/products/c-05.avif"
+  imgMain: "@/images/products/c-05.avif"
+  imgAlt: "Señal Genérica de Seguridad"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Material", "PVC / Estireno / Poliestireno"]
       - ["Uso", "Interior / Exterior"]
 blueprints:
-  first: "@/images/blueprint-senal-generica-1.avif" # Diagrama de la señal con medidas
-  second: "@/images/blueprint-senal-generica-2.avif" # Ejemplo de la señal instalada
+  first: "@/images/products/c-05.avif"
+  second: "@/images/products/c-05.avif"
 ---

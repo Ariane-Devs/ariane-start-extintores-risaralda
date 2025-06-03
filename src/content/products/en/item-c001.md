@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestra **Cinta Antideslizante de Seguridad** – la solución eficaz para prevenir caídas y mejorar la tracción en cualquier superficie. Este producto esencial, parte de nuestra **Línea de Control de Riesgos**, está diseñado para proporcionar una superficie segura en áreas de alto tránsito, escaleras o rampas, minimizando accidentes.
 
-  imgCard: "@/images/products/c-01.avif" 
-  imgMain: "@/images/products/c-01.avif" 
-  imgAlt: "Cinta antideslizante de alta resistencia para pisos"
+  imgCard: "@/images/products/c-01.avif"
+  imgMain: "@/images/products/c-01.avif"
+  imgAlt: "Cinta Antideslizante de Seguridad"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -53,6 +53,6 @@ tableData:
       - ["Resistencia a la Tracción", "[Especificar Valor si aplica]"]
       - ["Vida Útil Estimada", "[Especificar Años o Tiempo]"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/c-01.avif"
+  second: "@/images/products/c-01.avif"
 ---

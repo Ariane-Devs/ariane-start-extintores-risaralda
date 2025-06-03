@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-09.avif"
   imgMain: "@/images/products/d-09.avif"
   imgAlt: "Colombina vial para señalización de carretera"
+  first: "@/images/products/d-09.avif"
+  second: "@/images/products/d-09.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,7 +53,7 @@ tableData:
       - ["Altura", "75 cm aprox."]
       - ["Uso Recomendado", "Delimitación y control de tráfico"]
 blueprints:
-  first: "@/images/blueprint-d-09-1.avif"
-  second: "@/images/blueprint-d-09-2.avif"
+  first: "@/images/products/d-09.avif"
+  second: "@/images/products/d-09.avif"
 ---
 

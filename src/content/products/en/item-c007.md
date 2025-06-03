@@ -7,9 +7,11 @@ main:
   content: |
     Presentamos nuestra **Paleta Pare y Siga** – la herramienta indispensable para la gestión segura del tráfico peatonal y vehicular en obras, eventos o cualquier zona que requiera dirección. Parte crucial de nuestra **Línea de Demarcación y Señalización**, esta paleta de alta visibilidad asegura la organización y previene accidentes, garantizando un control claro y eficaz.
 
-  imgCard: "@/images/products/paleta-pare-siga-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/paleta-pare-siga-main.avif" # Sugerencia de imagen principal
+  imgCard: "@/images/products/c-07.avif" # Sugerencia de imagen para la tarjeta
+  imgMain: "@/images/products/c-07.avif" # Sugerencia de imagen principal
   imgAlt: "Paleta de señalización Pare y Siga"
+  first: "@/images/products/c-07.avif" # Diagrama de la paleta
+  second: "@/images/products/c-07.avif" # Vista de la paleta en uso
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -51,6 +53,6 @@ tableData:
       - ["Precio (COP)", "$35.000"]
       - ["Uso Recomendado", "Obras, Eventos, Control de Tráfico"]
 blueprints:
-  first: "@/images/blueprint-paleta-1.avif" # Diagrama de la paleta
-  second: "@/images/blueprint-paleta-2.avif" # Vista de la paleta en uso
+  first: "@/images/products/c-07.avif" # Diagrama de la paleta
+  second: "@/images/products/c-07.avif" # Vista de la paleta en uso
 ---

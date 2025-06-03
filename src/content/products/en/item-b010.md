@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Botiquín Industrial con Dotación** – la solución completa para la atención de emergencias en el lugar de trabajo. Parte esencial de nuestra **Línea de Primeros Auxilios**, este kit robusto y organizado cumple con las normativas de seguridad industrial, asegurando que tu empresa esté preparada para responder eficazmente ante cualquier incidente.
 
-  imgCard: "@/images/products/botiquin-industrial-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/botiquin-industrial-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Botiquín industrial con dotación completa"
+  imgCard: "@/images/products/b-10.avif"
+  imgMain: "@/images/products/b-10.avif"
+  imgAlt: "Botiquín Industrial con Dotación"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -76,6 +76,6 @@ tableData:
       - ["Uso Recomendado", "Entornos Laborales (industrias, oficinas, construcción)"]
       - ["Material del Estuche", "Plástico ABS / Metal"]
 blueprints:
-  first: "@/images/blueprint-botiquin-industrial-1.avif" # Diagrama del botiquín abierto
-  second: "@/images/blueprint-botiquin-industrial-2.avif" # Vista del botiquín cerrado
+  first: "@/images/products/b-10.avif"
+  second: "@/images/products/b-10.avif"
 ---

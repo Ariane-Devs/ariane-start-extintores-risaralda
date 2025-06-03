@@ -10,6 +10,8 @@ main:
   imgCard: "@/images/products/d-01.avif"
   imgMain: "@/images/products/d-01.avif"
   imgAlt: "Kit de carretera completo"
+  first: "@/images/products/d-01.avif"
+  second: "@/images/products/d-01.avif"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -57,7 +59,7 @@ tableData:
       - ["Incluye", "Elementos de seguridad y emergencia"]
       - ["Uso Recomendado", "Vehículos particulares y comerciales"]
 blueprints:
-  first: "@/images/blueprint-d-01-1.avif"
-  second: "@/images/blueprint-d-01-2.avif"
+  first: "@/images/products/d-01.avif"
+  second: "@/images/products/d-01.avif"
 ---
 

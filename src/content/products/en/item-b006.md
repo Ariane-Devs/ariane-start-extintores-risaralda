@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestro **Botiquín Tipo B** – la solución integral para la gestión de emergencias médicas de mayor alcance. Parte fundamental de nuestra **Línea de Primeros Auxilios**, este kit robusto contiene una extensa dotación de 59 productos, cuidadosamente seleccionados para afrontar situaciones que requieren una intervención más avanzada y equipos más diversos.
 
-  imgCard: "@/images/products/botiquin-tipo-b-card.avif" # Sugerencia de imagen para la tarjeta
-  imgMain: "@/images/products/botiquin-tipo-b-main.avif" # Sugerencia de imagen principal
-  imgAlt: "Botiquín de primeros auxilios tipo B con 59 productos"
+  imgCard: "@/images/products/b-06.avif"
+  imgMain: "@/images/products/b-06.avif"
+  imgAlt: "Botiquín Tipo B"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -87,6 +87,6 @@ tableData:
       - ["Uso Recomendado", "Empresas, Escuelas, Conjuntos Residenciales, Eventos"]
       - ["Cumple Normativa", "Resolución 0705 de 2007 (Ministerio de Protección Social) / Otras normativas pertinentes para dotaciones extensas."]
 blueprints:
-  first: "@/images/blueprint-botiquin-b-1.avif" # Diagrama del botiquín abierto mostrando la organización
-  second: "@/images/blueprint-botiquin-b-2.avif" # Vista exterior del botiquín con detalles de sujeción
+  first: "@/images/products/b-06.avif"
+  second: "@/images/products/b-06.avif"
 ---

@@ -7,9 +7,9 @@ main:
   content: |
     Presentamos nuestra **Cinta de Demarcación de Seguridad** – la solución ideal para organizar y señalizar espacios de manera clara y eficiente. Este producto esencial, parte de nuestra **Línea de Control de Riesgos y Seguridad Industrial**, es fundamental para delimitar zonas de peligro, rutas de evacuación, áreas de trabajo o almacenamiento, mejorando la seguridad y el flujo operacional.
 
-  imgCard: "@/images/products/c-02.avif" 
-  imgMain: "@/images/products/c-02.avif" 
-  imgAlt: "Cinta de demarcación de seguridad amarilla y negra"
+  imgCard: "@/images/products/c-02.avif"
+  imgMain: "@/images/products/c-02.avif"
+  imgAlt: "Cinta de Demarcación de Seguridad"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -53,6 +53,6 @@ tableData:
       - ["Resistencia a Químicos", "Buena resistencia a ácidos y álcalis suaves"]
       - ["Uso Recomendado", "Interior / Exterior"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/c-02.avif"
+  second: "@/images/products/c-02.avif"
 ---

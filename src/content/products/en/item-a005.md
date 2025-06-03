@@ -7,8 +7,8 @@ main:
   content: |
     Presentamos nuestro **Extintor de Agente Limpio**, la solución más avanzada para la protección contra incendios en entornos delicados. Este equipo, parte esencial de nuestra **Línea de Control de Incendios**, utiliza un agente extintor de última generación que suprime el fuego de manera rápida y efectiva sin dejar residuos, salvaguardando tus bienes más valiosos.
 
-  imgCard: "@/images/products/a-02.avif" 
-  imgMain: "@/images/products/a-02.avif"
+  imgCard: "@/images/products/a-05.avif" 
+  imgMain: "@/images/products/a-05.avif"
   imgAlt: "Extintor de agente limpio para entornos electrónicos"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Material del Cilindro", "Acero de alta resistencia con recubrimiento especial"]
       - ["Funcionamiento", "Interrupción química y absorción de calor"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/a-05.avif"
+  second: "@/images/products/a-05.avif" 
 ---

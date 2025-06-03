@@ -56,11 +56,16 @@ blueprints:
   first: "@/images/blueprint-matero-1.avif" # Diagrama de la base matero sin señal
   second: "@/images/blueprint-matero-2.avif" # Diagrama de la base matero con señal
 ---
-
-los items con la d son la linea para carretera
+mira como estan los items, de la a a la c y vamos a editar los items con la d; estos  son la linea para carretera
 
 y tengo los siguientes:
  Kit de carretera $75.000
  Maletin para kit de carretera $15.000
  Kit de herramientas $40.000
- 
+ Par de tacos de madera $12.000
+ Chaleco reflectivo $12.000
+ Par de conos para kit $12.000
+ Linterna dinamo $15.000
+ Cono PVC xPar 20 cm $40.000 33 cm $55.000 45 cm $90.000 70 cm $150.000 90 cm $200.000
+ Colombina vial $70.000
+ Cono retractil xPar 30 cm $60.000 45 cm $90.000 60 cm $120.000

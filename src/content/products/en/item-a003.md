@@ -7,8 +7,8 @@ main:
   content: |
     Presentamos nuestro **Extintor de Agente Limpio** – la solución avanzada para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye características clave, meticulosamente seleccionadas para afrontar fuegos sin dejar residuos, ideal para ambientes sensibles.
 
-  imgCard: "@/images/products/a-02.avif" 
-  imgMain: "@/images/products/a-02.avif" 
+  imgCard: "@/images/products/a-03.avif" 
+  imgMain: "@/images/products/a-03.avif" 
   imgAlt: "Extintor de agente limpio sin residuos"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -51,6 +51,6 @@ tableData:
       - ["Material del Cilindro", "Acero sin costura (alta presión)"]
       - ["Válvula", "Latón cromado con boquilla difusora"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/a-03.avif"
+  second: "@/images/products/a-03.avif" 
 ---

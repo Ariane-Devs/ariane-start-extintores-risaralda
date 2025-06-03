@@ -51,6 +51,6 @@ tableData:
       - ["Material del Cilindro", "Acero de alta resistencia"]
       - ["Válvula", "Metálica con manómetro"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/a-02.avif"
+  second: "@/images/products/a-02.avif" 
 ---

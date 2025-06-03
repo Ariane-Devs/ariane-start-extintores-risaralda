@@ -8,8 +8,8 @@ main:
     Presentamos nuestro **Extintor Clase K** – la solución definitiva para la seguridad en cocinas comerciales e industriales. Este equipo especializado, parte de nuestra completa **Línea de Control de Incendios**, está diseñado con un agente químico húmedo eficaz para extinguir fuegos de aceites y grasas combustibles, actuando de forma segura y rápida.
 
   
-  imgCard: "@/images/products/a-02.avif" 
-  imgMain: "@/images/products/a-02.avif"
+  imgCard: "@/images/products/a-04.avif" 
+  imgMain: "@/images/products/a-04.avif"
   imgAlt: "Extintor Clase K para cocinas industriales"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -52,6 +52,6 @@ tableData:
       - ["Material del Cilindro", "Acero inoxidable o similar resistente a la corrosión"]
       - ["Válvula", "Metálica de alta resistencia con boquilla pulverizadora"]
 blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif" 
+  first: "@/images/products/a-04.avif"
+  second: "@/images/products/a-04.avif" 
 ---

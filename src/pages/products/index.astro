@@ -75,22 +75,89 @@ const ogTitle = "Hardware Tools | Extintoresdelrisaralda";
         }
       </div>
     </div>
-    {/* Displaying products in alternating styles. Alternative product gets different card styling.
-    Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-      {
-        product.map((product, index) => {
-          const position = index % 4;
-          if (position === 0 || position === 3) {
-            return <CardSmall product={product} />;
-          } else {
-            return <CardSmall product={product} />;
-            {/* return <CardWide product={product} />; */}
-          }
-        })
-      }
+    
+    <section class="space-y-12">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 flex items-center gap-2">
+            Línea de control de incendios
+            <div>
+               <span class="sr-only">Mostrar/Ocultar</span>
+              <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg> 
+            </div>
+          </h2>
+        </div>
+        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('control de incendios')).map(p => (
+            <CardSmall product={p} />
+          ))}
+        </div>
+      </div>
+      {/* Línea de primeros auxilios */}
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 flex items-center gap-2">
+            Línea de primeros auxilios
+            <div>
+               <span class="sr-only">Mostrar/Ocultar</span>
+                <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </h2>
+        </div>
+        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('primeros auxilios')).map(p => (
+            <CardSmall product={p} />
+          ))}
+        </div>
+      </div>
+
+      {/* Línea de demarcación y señalización */}
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 flex items-center gap-2">
+            Línea de demarcación y señalización
+            <div>
+               <span class="sr-only">Mostrar/Ocultar</span>
+                <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg> 
+            </div>
+          </h2>
+        </div>
+        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('demarcación') || p.data.line.toLowerCase().includes('señalización')).map(p => (
+            <CardSmall product={p} />
+          ))}
+        </div>
+      </div>
+
+      {/* Línea para carretera */}
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 flex items-center gap-2">
+            Línea para carretera
+            <div>
+               <span class="sr-only">Mostrar/Ocultar</span>
+                <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg> 
+            </div>
+          </h2>
+        </div>
+        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('carretera')).map(p => (
+            <CardSmall product={p} />
+          ))}
+        </div>
+      </div>
     </section>
-  </div>
-  {/* Features statistics section */}
-  
+  </div>  
 </MainLayout>

@@ -13,7 +13,7 @@ interface Props {
 
 // Define classes to be used with the Image component
 const imageClass =
-  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
+  "absolute inset-0 h-full w-full object-cover object-center object-content transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
 ---
 
 <!-- A clickable card that leads to the details of the product-->
@@ -36,13 +36,7 @@ const imageClass =
   <div
     class="pointer-events-none absolute inset-0 bg-linear-to-t from-neutral-800 via-transparent to-transparent opacity-50"
   >
-  </div>
-  <span
-    class="absolute top-0 left-0 right-0 w-full h-10 bg-neutral-800 text-white flex items-center justify-center text-sm font-bold rounded-t-xl z-20 md:h-12 md:text-base"
-  >
-    {product.data.line}
-  </span>
-  
+  </div>  
   <span
     class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
     >{product.data.description} <Icon name="openInNew" /> 

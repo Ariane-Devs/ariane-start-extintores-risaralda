@@ -20,13 +20,18 @@ interface Props {
         <!-- Avatar Group -->
         <div class="flex justify-center -space-x-3">
           {avatars?.map((src) => <Avatar src={src} alt="Avatar Description" />)}
-          <span
-            class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800 ring-2 ring-white dark:bg-zinc-900 dark:ring-zinc-800"
+          <a
+            href="https://maps.app.goo.gl/kZvcpxKJxJqJT8S76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800 ring-2 ring-white dark:bg-zinc-900 dark:ring-zinc-800 transition-transform duration-200 hover:scale-110 hover:bg-orange-500"
+            aria-label="Ver ubicación en Google Maps"
           >
-            <span class="text-xs font-medium uppercase leading-none text-white"
-              >7k+</span
-            >
-          </span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.418 0-8-5.373-8-9.5A8 8 0 0 1 20 11.5C20 15.627 16.418 21 12 21z" />
+              <circle cx="12" cy="11" r="3" fill="currentColor" />
+            </svg>
+          </a>
         </div>
       </div>
       <div
@@ -36,16 +41,6 @@ interface Props {
       <!-- Review Ratings -->
       <div class="flex flex-col items-center sm:items-start">
         <div class="flex items-baseline space-x-1 pt-5 sm:ps-5 sm:pt-0">
-          <div class="flex space-x-1">
-            <!-- Your star ratings -->
-            {
-              Array(starCount)
-                .fill(0)
-                .map((_, i) => <FullStar key={i} />)
-            }
-            <!-- Adding additional half-star -->
-            <HalfStar />
-          </div>
           <p class="text-neutral-800 dark:text-neutral-200">
             <Fragment set:html={rating} />
           </p>

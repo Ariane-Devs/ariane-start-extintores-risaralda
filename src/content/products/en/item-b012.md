@@ -1,6 +1,6 @@
 ---
 title: "Gabinete Metálico para Extintor (10 lb)"
-description: "Protección y Ubicación Segura para tu Extintor"
+description: "Gabinete Metálico para Extintor"
 line: "Línea de control de incendios"
 main:
   id: 107 # ID único para este producto

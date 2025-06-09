@@ -1,7 +1,18 @@
 import type { APIRoute, ImageMetadata } from "astro";
 import { getImage } from "astro:assets";
-import icon from "@images/icon.png";
-import maskableIcon from "@images/icon-maskable.png";
+
+const icon = {
+  src: "/icon.png",
+  width: 512,
+  height: 512,
+  format: "png"
+};
+const maskableIcon = {
+  src: "/icon-maskable.png",
+  width: 512,
+  height: 512,
+  format: "png"
+};
 
 interface Favicon {
   purpose: 'any' | 'maskable' | 'monochrome';
@@ -13,12 +24,12 @@ const sizes = [192, 512];
 const favicons: Favicon[] = [
   {
     purpose: 'any',
-    src: icon,
+    src: icon as any,
     sizes,
   },
   {
     purpose: 'maskable',
-    src: maskableIcon,
+    src: maskableIcon as any,
     sizes,
    },
 ];

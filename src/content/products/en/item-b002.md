@@ -1,9 +1,9 @@
 ---
-title: "Botiquín de Primeros Auxilios Esencial"
-description: "Kit Completo para Emergencias y Cuidado Básico"
+title: "Kit Completo para Emergencias y Cuidado Básico"
+description: "Botiquín de Primeros Auxilios Esencial "
 line: "Línea de primeros auxilios"
 main:
-  id: 301
+  id: 202
   content: |
     Presentamos nuestro **Botiquín de Primeros Auxilios Esencial** – tu aliado indispensable para la atención inmediata en cualquier situación de emergencia. Este kit, parte fundamental de nuestra **Línea de Primeros Auxilios**, incluye una cuidadosa selección de insumos básicos y herramientas diseñadas para brindar una respuesta rápida y efectiva.
 

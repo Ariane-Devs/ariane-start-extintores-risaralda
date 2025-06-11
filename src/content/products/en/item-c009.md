@@ -3,7 +3,7 @@ title: "Canastilla Metálica para Extintor (10 lb)"
 description: "Soporte Robusto y Elevado para Extintores"
 line: "Línea de control de incendios"
 main:
-  id: 109 # ID único para este producto
+  id: 309 # ID único para este producto
   content: |
     Presentamos nuestra **Canastilla Metálica para Extintor de 10 lb** – la solución perfecta para mantener tu extintor en un lugar visible y seguro, sin necesidad de fijación a la pared. Parte esencial de nuestra **Línea de Control de Incendios**, esta canastilla eleva el equipo del suelo, protegiéndolo de la humedad y golpes, a la vez que asegura su fácil acceso y señalización.
 

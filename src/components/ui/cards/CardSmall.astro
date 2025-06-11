@@ -13,7 +13,7 @@ interface Props {
 
 // Define classes to be used with the Image component
 const imageClass =
-  "absolute inset-0 h-full w-full object-cover object-center object-content transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
+  "absolute inset-0 h-full w-full object-cover object-center object-content transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] hover:scale-110";
 ---
 
 <!-- A clickable card that leads to the details of the product-->
@@ -22,7 +22,7 @@ const imageClass =
     ? `/${productLocale}/products/${product.id.replace(/^fr\//, "")}/`
     : `/products/${product.id.replace(/^en\//, "")}/`}
   data-astro-prefetch
-  class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-hidden ring-zinc-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden md:h-80"
+  class="relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-hidden ring-zinc-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden md:h-80"
 >
   <!-- The product's main image -->
   <Image
@@ -38,7 +38,7 @@ const imageClass =
   >
   </div>  
   <span
-    class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+    class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] hover:scale-110 md:ml-5 md:text-lg"
     >{product.data.description} <Icon name="openInNew" /> 
   </span>
 </a>

@@ -3,7 +3,7 @@ title: "Botiquín Caja Plástica Rimax"
 description: "Estuche Resistente y Práctico para Primeros Auxilios"
 line: "Línea de primeros auxilios"
 main:
-  id: 209 # ID único para este producto
+  id: 211
   content: |
     Presentamos nuestro **Botiquín Caja Plástica Rimax** – la solución robusta y confiable para almacenar tus insumos de primeros auxilios. Parte esencial de nuestra **Línea de Primeros Auxilios**, este estuche de alta resistencia, fabricado por Rimax, protege tu dotación del polvo y la humedad, asegurando que esté siempre lista para cualquier emergencia.
 

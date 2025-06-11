@@ -3,7 +3,7 @@ title: "Extintor de Agente Limpio"
 description: "Protección Avanzada para Equipos Sensibles"
 line: "Línea de control de incendios"
 main:
-  id: 104 # ID único para este producto
+  id: 105
   content: |
     Presentamos nuestro **Extintor de Agente Limpio**, la solución más avanzada para la protección contra incendios en entornos delicados. Este equipo, parte esencial de nuestra **Línea de Control de Incendios**, utiliza un agente extintor de última generación que suprime el fuego de manera rápida y efectiva sin dejar residuos, salvaguardando tus bienes más valiosos.
 

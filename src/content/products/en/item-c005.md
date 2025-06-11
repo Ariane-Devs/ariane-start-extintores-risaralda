@@ -3,7 +3,7 @@ title: "Señal Genérica de Seguridad"
 description: "Información Visual Clara y Precisa"
 line: "Línea de demarcación y señalización"
 main:
-  id: 504 # ID único para este producto
+  id: 305 # ID único para este producto
   content: |
     Presentamos nuestra **Señal Genérica de Seguridad de 15x30 cm** – la herramienta ideal para comunicar mensajes importantes de forma clara y visible. Parte esencial de nuestra **Línea de Demarcación y Señalización**, estas señales son fundamentales para indicar rutas, identificar equipos, señalar prohibiciones o advertir sobre riesgos, mejorando la seguridad y la organización en cualquier espacio.
 

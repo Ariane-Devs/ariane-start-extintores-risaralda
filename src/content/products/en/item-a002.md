@@ -1,9 +1,9 @@
 ---
 title: "Extintor Fuego"
-description: "Extintor para Control de Incendios"
+description: "Extintor Fuego"
 line: "Línea de control de incendios"
 main:
-  id: 101
+  id: 102
   content: |
     Presentamos nuestro **Extintor Estándar** – la solución definitiva para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye una variedad de características clave, meticulosamente seleccionadas para afrontar cualquier tipo de incendio con eficacia y precisión.
 

@@ -1,9 +1,9 @@
 ---
-title: "Extintor Clase K"
-description: "Extintor para Fuegos de Cocina (Químico Húmedo)"
+title: "Extintor para Fuegos de Cocina (Químico Húmedo)"
+description: "Extintor Clase K"
 line: "Línea de control de incendios"
 main:
-  id: 103 # Cambiado a 103 para distinguirlo de los otros
+  id: 104
   content: |
     Presentamos nuestro **Extintor Clase K** – la solución definitiva para la seguridad en cocinas comerciales e industriales. Este equipo especializado, parte de nuestra completa **Línea de Control de Incendios**, está diseñado con un agente químico húmedo eficaz para extinguir fuegos de aceites y grasas combustibles, actuando de forma segura y rápida.
 

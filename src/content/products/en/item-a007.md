@@ -3,7 +3,7 @@ title: "Extintor de CO2"
 description: "Agente Limpio para Fuegos Eléctricos y Líquidos"
 line: "Línea de control de incendios"
 main:
-  id: 106 # ID único para este producto
+  id: 107
   content: |
     Presentamos nuestro **Extintor de CO2** – la solución ideal para proteger equipos electrónicos, líquidos inflamables y maquinaria delicada. Este equipo, parte esencial de nuestra **Línea de Control de Incendios**, utiliza dióxido de carbono para extinguir el fuego por desplazamiento de oxígeno, sin dejar residuos ni daños colaterales.
 

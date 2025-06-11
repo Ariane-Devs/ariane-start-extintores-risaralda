@@ -3,7 +3,7 @@ title: "Cinta Antideslizante Fotoluminiscente"
 description: "Seguridad y Visibilidad en la Oscuridad"
 line: "Línea de demarcación y señalización"
 main:
-  id: 502 # ID único para este producto
+  id: 303 # ID único para este producto
   content: |
     Presentamos nuestra **Cinta Antideslizante Fotoluminiscente** – la solución de seguridad que brilla en la oscuridad. Este producto innovador, parte de nuestra **Línea de Demarcación y Señalización**, combina una superficie antideslizante de alta tracción con propiedades que la hacen visible en condiciones de baja luz o cortes de energía, siendo fundamental para la seguridad en rutas de evacuación o escaleras.
 

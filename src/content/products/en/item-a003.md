@@ -1,9 +1,9 @@
 ---
 title: "Extintor de Agente Limpio"
-description: "Extintor Ecológico para Incendios Específicos"
+description: "Extintor de Agente Limpio"
 line: "Línea de control de incendios"
 main:
-  id: 102 # Cambiado a 102 para distinguirlo del extintor de polvo
+  id: 103
   content: |
     Presentamos nuestro **Extintor de Agente Limpio** – la solución avanzada para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye características clave, meticulosamente seleccionadas para afrontar fuegos sin dejar residuos, ideal para ambientes sensibles.
 

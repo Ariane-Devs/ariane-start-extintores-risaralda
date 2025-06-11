@@ -3,7 +3,7 @@ title: "Cono PVC para Carretera (varias medidas)"
 description: "Señalización profesional y resistente para la vía"
 line: "Línea para carretera"
 main:
-  id: 708
+  id: 408
   content: |
     El **Cono PVC para Carretera** está disponible en varias alturas y es ideal para señalizar zonas de trabajo, desvíos o emergencias. Fabricado en PVC de alta resistencia, soporta el uso intensivo y las condiciones climáticas adversas.
 

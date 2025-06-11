@@ -1,9 +1,9 @@
 ---
-title: "Botiquín Industrial con Dotación"
-description: "Kit de Primeros Auxilios para Entornos Laborales"
+title: "Caja rimax"
+description: "Caja rimax"
 line: "Línea de primeros auxilios"
 main:
-  id: 208 # ID único para este producto
+  id: 210
   content: |
     Presentamos nuestro **Botiquín Industrial con Dotación** – la solución completa para la atención de emergencias en el lugar de trabajo. Parte esencial de nuestra **Línea de Primeros Auxilios**, este kit robusto y organizado cumple con las normativas de seguridad industrial, asegurando que tu empresa esté preparada para responder eficazmente ante cualquier incidente.
 

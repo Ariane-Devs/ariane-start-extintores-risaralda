@@ -1,9 +1,9 @@
 ---
-title: "Botiquín Tipo A"
-description: "Kit Básico Esencial para Primeros Auxilios"
+title: "Kit Básico Esencial para Primeros Auxilios"
+description: "Botiquín Tipo A"
 line: "Línea de primeros auxilios"
 main:
-  id: 203 # ID único para este producto
+  id: 205
   content: |
     Presentamos nuestro **Botiquín Tipo A** – la solución fundamental para la atención inmediata de emergencias menores. Parte indispensable de nuestra **Línea de Primeros Auxilios**, este kit compacto contiene una selección de 14 productos esenciales, cuidadosamente elegidos para brindar una respuesta rápida y efectiva en el hogar, la oficina o el vehículo.
 

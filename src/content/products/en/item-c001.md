@@ -3,7 +3,7 @@ title: "Cinta Antideslizante de Seguridad"
 description: "Prevención de Caídas y Mayor Tracción en Superficies"
 line: "Línea de demarcación y señalización"
 main:
-  id: 401
+  id: 301
   content: |
     Presentamos nuestra **Cinta Antideslizante de Seguridad** – la solución eficaz para prevenir caídas y mejorar la tracción en cualquier superficie. Este producto esencial, parte de nuestra **Línea de Control de Riesgos**, está diseñado para proporcionar una superficie segura en áreas de alto tránsito, escaleras o rampas, minimizando accidentes.
 

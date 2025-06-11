@@ -3,7 +3,7 @@ title: "Señal Fotoluminiscente"
 description: "Guía Segura y Visible en la Oscuridad"
 line: "Línea de demarcación y señalización"
 main:
-  id: 505 # ID único para este producto
+  id: 306 # ID único para este producto
   content: |
     Presentamos nuestra **Señal Fotoluminiscente de 15x30 cm** – la solución indispensable para la seguridad en entornos con riesgo de pérdida de luz. Parte esencial de nuestra **Línea de Demarcación y Señalización**, esta señal absorbe la luz ambiental y la emite en la oscuridad, guiando de forma clara rutas de evacuación, identificando equipos de emergencia o señalando peligros cuando más se necesita.
 

@@ -3,7 +3,7 @@ title: "Par de Conos para Kit de Carretera"
 description: "Señalización rápida y compacta para emergencias viales"
 line: "Línea para carretera"
 main:
-  id: 706
+  id: 406
   content: |
     El **Par de Conos para Kit de Carretera** permite señalizar zonas de peligro o delimitar áreas de trabajo en la vía de forma rápida y sencilla. Su tamaño compacto los hace ideales para llevar siempre en el vehículo.
 

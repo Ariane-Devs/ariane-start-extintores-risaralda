@@ -3,7 +3,7 @@ title: "Cono Retráctil para Carretera (varias medidas)"
 description: "Señalización portátil y fácil de almacenar para emergencias viales"
 line: "Línea para carretera"
 main:
-  id: 710
+  id: 410
   content: |
     El **Cono Retráctil para Carretera** es ideal para quienes buscan señalización eficiente y que ocupe poco espacio. Disponible en varias alturas, se pliega fácilmente para guardar en el maletero o kit de carretera.
 

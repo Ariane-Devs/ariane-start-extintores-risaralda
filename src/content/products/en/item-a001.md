@@ -1,6 +1,6 @@
 ---
 title: "Extintor Estándar"
-description: "Extintor General"
+description: "Extintor Estándar"
 line: "Línea de control de incendios"
 main:
   id: 101

@@ -3,7 +3,7 @@ title: "Maletín para Kit de Carretera"
 description: "Organización y protección para tus elementos viales"
 line: "Línea para carretera"
 main:
-  id: 702 # ID único para este producto
+  id: 402 # ID único para este producto
   content: |
     El **Maletín para Kit de Carretera** es el complemento ideal para mantener todos los elementos de seguridad organizados y protegidos. Fabricado en material resistente, facilita el transporte y almacenamiento del kit en tu vehículo.
 

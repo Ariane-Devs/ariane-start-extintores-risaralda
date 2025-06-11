@@ -3,7 +3,7 @@ title: "Extintor Satélite"
 description: "Unidad Móvil de Alta Capacidad para Grandes Áreas"
 line: "Línea de control de incendios"
 main:
-  id: 105
+  id: 106
   content: |
     Presentamos nuestro **Extintor Satélite** – una robusta unidad móvil de alta capacidad diseñada para la protección de grandes áreas y riesgos de incendio elevados. Este equipo esencial de nuestra **Línea de Control de Incendios** proporciona una capacidad de extinción superior, siendo fácil de transportar y operar en emergencias críticas.
 

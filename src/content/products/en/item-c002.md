@@ -3,7 +3,7 @@ title: "Cinta de Demarcación de Seguridad"
 description: "Delimitación y Organización de Áreas Clave"
 line: "Línea de demarcación y señalización"
 main:
-  id: 501
+  id: 302
   content: |
     Presentamos nuestra **Cinta de Demarcación de Seguridad** – la solución ideal para organizar y señalizar espacios de manera clara y eficiente. Este producto esencial, parte de nuestra **Línea de Control de Riesgos y Seguridad Industrial**, es fundamental para delimitar zonas de peligro, rutas de evacuación, áreas de trabajo o almacenamiento, mejorando la seguridad y el flujo operacional.
 

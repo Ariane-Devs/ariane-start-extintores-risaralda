@@ -3,7 +3,7 @@ title: "Base Matero para Extintor"
 description: "Soporte de Piso con Opción de Señalización Integrada"
 line: "Línea de control de incendios"
 main:
-  id: 110 # ID único para este producto
+  id: 310 # ID único para este producto
   content: |
     Presentamos nuestra **Base Matero para Extintor** – la solución práctica y estética para ubicar tu extintor en el suelo de forma visible y segura. Parte de nuestra **Línea de Control de Incendios**, esta base protege el extintor del contacto directo con el piso y ofrece la opción de incluir una señal de seguridad vertical para máxima visibilidad.
 

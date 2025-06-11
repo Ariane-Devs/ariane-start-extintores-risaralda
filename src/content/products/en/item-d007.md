@@ -3,7 +3,7 @@ title: "Linterna Dinamo para Carretera"
 description: "Iluminación de emergencia sin baterías para la vía"
 line: "Línea para carretera"
 main:
-  id: 707
+  id: 407
   content: |
     La **Linterna Dinamo para Carretera** es una fuente de luz confiable que no depende de baterías, ideal para emergencias nocturnas o cortes de energía en carretera. Se recarga manualmente mediante una manivela.
 

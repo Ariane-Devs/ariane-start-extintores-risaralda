@@ -1,9 +1,9 @@
 ---
-title: "Bolso Morral Mini"
-description: "Compacto y Versátil para Primeros Auxilios Personales"
+title: "Compacto y Versátil para Primeros Auxilios Personales"
+description: "Bolso Morral Mini"
 line: "Línea de primeros auxilios" # O podrías considerarlo "Línea de Accesorios de Seguridad"
 main:
-  id: 205 # ID único para este producto
+  id: 207
   content: |
     Presentamos nuestro **Bolso Morral Mini** – la solución ultra-portátil y versátil para tus necesidades de primeros auxilios o para llevar tus esenciales de seguridad. Parte de nuestra **Línea de Primeros Auxilios**, este pequeño morral de lona es perfecto para guardar y transportar de forma discreta una dotación básica o equipos personales, ideal para el día a día.
 

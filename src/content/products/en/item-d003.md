@@ -3,7 +3,7 @@ title: "Kit de Herramientas para Carretera"
 description: "Solución práctica para emergencias y reparaciones viales"
 line: "Línea para carretera"
 main:
-  id: 703
+  id: 403
   content: |
     El **Kit de Herramientas para Carretera** es esencial para afrontar imprevistos mecánicos en la vía. Incluye herramientas básicas seleccionadas para solucionar averías menores y facilitar la movilidad.
 

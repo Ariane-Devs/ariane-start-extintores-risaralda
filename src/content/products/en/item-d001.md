@@ -3,7 +3,7 @@ title: "Kit de Carretera"
 description: "Equipo esencial para emergencias viales"
 line: "Línea para carretera"
 main:
-  id: 701 # ID único para este producto
+  id: 401 # ID único para este producto
   content: |
     Presentamos nuestro **Kit de Carretera** – el conjunto indispensable para la seguridad y cumplimiento en vías. Incluye los elementos básicos requeridos por la normativa para atender emergencias y señalizar tu vehículo en caso de incidentes.
 

@@ -3,7 +3,7 @@ title: "Soporte Metálico de Pared en L"
 description: "Fijación Robusta y Discreta para Extintores y Equipos"
 line: "Línea de control de incendios" # O podría ser "Línea de Accesorios de Seguridad"
 main:
-  id: 108 # ID único para este producto (siguiendo los extintores)
+  id: 308 # ID único para este producto (siguiendo los extintores)
   content: |
     Presentamos nuestro **Soporte Metálico de Pared en L** – la solución práctica y duradera para fijar de forma segura extintores, mangueras o pequeños equipos a la pared. Parte fundamental de nuestra **Línea de Control de Incendios**, este soporte discreto y resistente asegura que tus equipos estén siempre en su lugar, visibles y listos para usar en caso de emergencia.
 

@@ -3,7 +3,7 @@ title: "Paleta Pare y Siga"
 description: "Control de Tráfico y Seguridad en Zonas de Trabajo"
 line: "Línea de demarcación y señalización"
 main:
-  id: 506 # ID único para este producto
+  id: 307
   content: |
     Presentamos nuestra **Paleta Pare y Siga** – la herramienta indispensable para la gestión segura del tráfico peatonal y vehicular en obras, eventos o cualquier zona que requiera dirección. Parte crucial de nuestra **Línea de Demarcación y Señalización**, esta paleta de alta visibilidad asegura la organización y previene accidentes, garantizando un control claro y eficaz.
 

@@ -3,7 +3,7 @@ title: "Colombina Vial"
 description: "Elemento de señalización vertical para control de tráfico"
 line: "Línea para carretera"
 main:
-  id: 709
+  id: 409
   content: |
     La **Colombina Vial** es un dispositivo de señalización vertical utilizado para delimitar carriles, zonas de trabajo o desvíos temporales en la vía. Flexible y resistente, es ideal para mejorar la seguridad vial.
 

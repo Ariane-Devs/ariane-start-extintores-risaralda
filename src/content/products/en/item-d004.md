@@ -3,7 +3,7 @@ title: "Par de Tacos de Madera"
 description: "Seguridad adicional para estacionamiento y cambio de llantas"
 line: "Línea para carretera"
 main:
-  id: 704
+  id: 404
   content: |
     El **Par de Tacos de Madera** es fundamental para asegurar el vehículo durante paradas, cambios de llanta o trabajos en carretera, evitando desplazamientos accidentales.
 

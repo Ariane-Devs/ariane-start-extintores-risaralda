@@ -1,9 +1,9 @@
 ---
-title: "Botiquín Tipo B"
-description: "Kit de Primeros Auxilios Extendido para Emergencias Completas"
+title: "Kit de Primeros Auxilios Extendido para Emergencias Completas"
+description: "Botiquín Tipo B"
 line: "Línea de primeros auxilios"
 main:
-  id: 204 # ID único para este producto
+  id: 206
   content: |
     Presentamos nuestro **Botiquín Tipo B** – la solución integral para la gestión de emergencias médicas de mayor alcance. Parte fundamental de nuestra **Línea de Primeros Auxilios**, este kit robusto contiene una extensa dotación de 59 productos, cuidadosamente seleccionados para afrontar situaciones que requieren una intervención más avanzada y equipos más diversos.
 

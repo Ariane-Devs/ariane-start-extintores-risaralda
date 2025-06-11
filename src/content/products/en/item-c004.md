@@ -3,7 +3,7 @@ title: "Cinta de Precaución"
 description: "Delimitación Rápida y Clara de Áreas de Riesgo"
 line: "Línea de demarcación y señalización"
 main:
-  id: 503 # ID único para este producto
+  id: 304 
   content: |
     Presentamos nuestra **Cinta de Precaución** – la herramienta esencial para señalizar y delimitar áreas de riesgo de forma rápida y efectiva. Parte indispensable de nuestra **Línea de Demarcación y Señalización**, esta cinta de alta visibilidad es ideal para advertir sobre peligros, restringir el acceso o guiar el tráfico peatonal en zonas de construcción, eventos o cualquier situación que requiera atención inmediata.
 

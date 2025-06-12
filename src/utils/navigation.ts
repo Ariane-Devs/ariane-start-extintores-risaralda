@@ -4,7 +4,7 @@ const navBarLinks = [
   { name: "Productos", url: "/products" },
   // { name: "Servicios", url: "/services" },
   // { name: "Blog", url: "/blog" },
-  { name: "Contactanos", url: "/contact" },
+  { name: "Contáctanos", url: "/contact" },
 ];
 
 const footerLinks = [
@@ -16,7 +16,6 @@ const footerLinks = [
     ],
   },
 ];
-
 
 const socialLinks = {
   facebook: "https://www.facebook.com/extintorrisaralda/",

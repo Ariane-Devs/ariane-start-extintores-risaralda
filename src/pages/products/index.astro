@@ -27,9 +27,8 @@ const title: string = "Productos";
 const subTitle: string =
   "Descubra el rendimiento confiable de los extintores de Extintoresdelrisaralda, esenciales tanto para profesionales como para la seguridad del hogar. Cada extintor está fabricado con los más altos estándares, lo que garantiza su funcionamiento eficaz cuando más se necesita.";
 
-
 const pageTitle: string = `Products | ${SITE.title}`;
-const metaDescription = 
+const metaDescription =
   "Explore the durability and precision of Extintoresdelrisaralda tools, designed for both professionals and enthusiasts.";
 const ogTitle = "Hardware Tools | Extintoresdelrisaralda";
 ---
@@ -56,87 +55,265 @@ const ogTitle = "Hardware Tools | Extintoresdelrisaralda";
     inLanguage: "en-US",
   }}
 >
-  <div
+  <!-- Hero Section for Products -->
+  <section
     class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
   >
-    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-      <div class="flex items-center gap-12">
-        <h1
-          class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
+    <div class="mx-auto max-w-3xl text-center">
+      <h1
+        class="block text-3xl font-bold tracking-tight text-balance text-neutral-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-neutral-200"
+      >
+        {title}
+      </h1>
+      {
+        subTitle && (
+          <p class="mx-auto mt-3 text-lg leading-relaxed text-pretty text-neutral-700 lg:w-4/5 dark:text-neutral-400">
+            {subTitle}
+          </p>
+        )
+      }
+    </div>
+  </section>
+
+  <!-- Products Sections -->
+  <div
+    class="mx-auto max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-14 2xl:max-w-full"
+  >
+    <!-- Línea de control de incendios -->
+    <section class="mb-20">
+      <div class="mb-10 text-center">
+        <div
+          class="mx-auto mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/20"
         >
-          {title}
-        </h1>
+          <svg
+            class="h-8 w-8 text-orange-600 dark:text-orange-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 1-4 4-4 5 0 8 4 8 8a8 8 0 01-1.343 4.657z"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12h.01M15 12h.01"></path>
+          </svg>
+        </div>
+        <h2
+          class="text-3xl font-bold text-neutral-800 sm:text-4xl lg:text-5xl dark:text-neutral-200"
+        >
+          Línea de control de incendios
+        </h2>
+        <p
+          class="mx-auto mt-3 max-w-2xl text-lg text-pretty text-neutral-600 dark:text-neutral-400"
+        >
+          Equipos especializados para la prevención y extinción de incendios,
+          diseñados con los más altos estándares de calidad y seguridad
+        </p>
+      </div>
+
+      <!-- Enhanced grid layout with mixed card sizes -->
+      <div class="grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {
-          subTitle && (
-            <p class="hidden max-w-(--breakpoint-sm) text-pretty text-neutral-600 md:block dark:text-neutral-400">
-              {subTitle}
-            </p>
-          )
+          product
+            .filter(
+              (p) =>
+                p.data.line &&
+                p.data.line.toLowerCase().includes("control de incendios")
+            )
+            .map((p, index) => {
+              // Create a dynamic layout pattern
+              if (index === 0) {
+                return (
+                  <div class="lg:col-span-2 lg:row-span-1">
+                    <CardWide product={p} />
+                  </div>
+                );
+              } else if (index === 3) {
+                return (
+                  <div class="lg:col-span-2 lg:row-span-1">
+                    <CardWide product={p} />
+                  </div>
+                );
+              } else {
+                return <CardSmall product={p} />;
+              }
+            })
         }
       </div>
-    </div>
-    
-    <section class="space-y-12">
-      {/* Línea de control de incendios */}
-      <details class="group rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 shadow transition-all duration-300" open>
-        <summary class="flex items-center justify-between mb-4 cursor-pointer select-none px-4 py-3 text-xl font-bold text-neutral-800 dark:text-neutral-200 gap-2">
-          <span>Línea de control de incendios</span>
-          <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </summary>
-        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 pb-4">
-          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('control de incendios')).map(p => (
-            <CardSmall product={p} />
-          ))}
-        </div>
-      </details>
-      {/* Línea de primeros auxilios */}
-      <details class="group rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 shadow transition-all duration-300">
-        <summary class="flex items-center justify-between mb-4 cursor-pointer select-none px-4 py-3 text-xl font-bold text-neutral-800 dark:text-neutral-200 gap-2">
-          <span>Línea de primeros auxilios</span>
-          <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </summary>
-        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 pb-4">
-          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('primeros auxilios')).map(p => (
-            <CardSmall product={p} />
-          ))}
-        </div>
-      </details>
-      {/* Línea de demarcación y señalización */}
-      <details class="group rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 shadow transition-all duration-300">
-        <summary class="flex items-center justify-between mb-4 cursor-pointer select-none px-4 py-3 text-xl font-bold text-neutral-800 dark:text-neutral-200 gap-2">
-          <span>Línea de demarcación y señalización</span>
-          <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </summary>
-        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 pb-4">
-          {product.filter(p => p.data.line && (p.data.line.toLowerCase().includes('demarcación') || p.data.line.toLowerCase().includes('señalización'))).map(p => (
-            <CardSmall product={p} />
-          ))}
-        </div>
-      </details>
-      {/* Línea para carretera */}
-      <details class="group rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 shadow transition-all duration-300">
-        <summary class="flex items-center justify-between mb-4 cursor-pointer select-none px-4 py-3 text-xl font-bold text-neutral-800 dark:text-neutral-200 gap-2">
-          <span>Línea para carretera</span>
-          <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </summary>
-        <div class="w-full border-t-4 border-neutral-400 dark:border-neutral-600 my-2"></div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 pb-4">
-          {product.filter(p => p.data.line && p.data.line.toLowerCase().includes('carretera')).map(p => (
-            <CardSmall product={p} />
-          ))}
-        </div>
-      </details>
     </section>
-  </div>  
+
+    <!-- Línea de primeros auxilios -->
+    <section class="mb-20">
+      <div class="mb-10 text-center">
+        <div
+          class="mx-auto mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-red-100 dark:bg-red-900/20"
+        >
+          <svg
+            class="h-8 w-8 text-red-600 dark:text-red-400"
+            fill="currentColor"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            ></path>
+          </svg>
+        </div>
+        <h2
+          class="text-3xl font-bold text-neutral-800 sm:text-4xl lg:text-5xl dark:text-neutral-200"
+        >
+          Línea de primeros auxilios
+        </h2>
+        <p
+          class="mx-auto mt-3 max-w-2xl text-lg text-pretty text-neutral-600 dark:text-neutral-400"
+        >
+          Suministros esenciales para atención médica de emergencia,
+          garantizando respuesta rápida y efectiva
+        </p>
+      </div>
+
+      <div class="grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          product
+            .filter(
+              (p) =>
+                p.data.line &&
+                p.data.line.toLowerCase().includes("primeros auxilios")
+            )
+            .map((p, index) => {
+              if (index === 1) {
+                return (
+                  <div class="lg:col-span-2">
+                    <CardWide product={p} />
+                  </div>
+                );
+              } else {
+                return <CardSmall product={p} />;
+              }
+            })
+        }
+      </div>
+    </section>
+
+    <!-- Línea de demarcación y señalización -->
+    <section class="mb-20">
+      <div class="mb-10 text-center">
+        <div
+          class="mx-auto mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900/20"
+        >
+          <svg
+            class="h-8 w-8 text-indigo-600 dark:text-indigo-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+        </div>
+        <h2
+          class="text-3xl font-bold text-neutral-800 sm:text-4xl lg:text-5xl dark:text-neutral-200"
+        >
+          Línea de demarcación y señalización
+        </h2>
+        <p
+          class="mx-auto mt-3 max-w-2xl text-lg text-pretty text-neutral-600 dark:text-neutral-400"
+        >
+          Sistemas de señalización y demarcación para seguridad industrial,
+          mejorando la organización y prevención
+        </p>
+      </div>
+
+      <div class="grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          product
+            .filter(
+              (p) =>
+                p.data.line &&
+                (p.data.line.toLowerCase().includes("demarcación") ||
+                  p.data.line.toLowerCase().includes("señalización"))
+            )
+            .map((p, index) => {
+              if (index === 2) {
+                return (
+                  <div class="lg:col-span-2">
+                    <CardWide product={p} />
+                  </div>
+                );
+              } else {
+                return <CardSmall product={p} />;
+              }
+            })
+        }
+      </div>
+    </section>
+
+    <!-- Línea para carretera -->
+    <section class="mb-20">
+      <div class="mb-10 text-center">
+        <div
+          class="mx-auto mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-yellow-100 dark:bg-yellow-900/20"
+        >
+          <svg
+            class="h-8 w-8 text-yellow-600 dark:text-yellow-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+            ></path>
+          </svg>
+        </div>
+        <h2
+          class="text-3xl font-bold text-neutral-800 sm:text-4xl lg:text-5xl dark:text-neutral-200"
+        >
+          Línea para carretera
+        </h2>
+        <p
+          class="mx-auto mt-3 max-w-2xl text-lg text-pretty text-neutral-600 dark:text-neutral-400"
+        >
+          Equipos de seguridad vial y señalización para carreteras, garantizando
+          protección y visibilidad óptima
+        </p>
+      </div>
+
+      <div class="grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          product
+            .filter(
+              (p) =>
+                p.data.line && p.data.line.toLowerCase().includes("carretera")
+            )
+            .map((p, index) => {
+              if (index === 0) {
+                return (
+                  <div class="lg:col-span-2">
+                    <CardWide product={p} />
+                  </div>
+                );
+              } else {
+                return <CardSmall product={p} />;
+              }
+            })
+        }
+      </div>
+    </section>
+  </div>
 </MainLayout>

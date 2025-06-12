@@ -13,7 +13,7 @@ interface Props {
 
 // Define classes to be used with the Image component
 const imageClass =
-  "absolute inset-0 h-full w-full object-cover object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
+  "absolute inset-0 h-full w-full object-contain object-center transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110";
 ---
 
 <!-- The anchor tag is the main container for the product card. When clicked, this leads to the details of the product. -->
@@ -22,7 +22,7 @@ const imageClass =
     ? `/${productLocale}/products/${product.id.replace(/^fr\//, "")}/`
     : `/products/${product.id.replace(/^en\//, "")}/`}
   data-astro-prefetch
-  class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-xl outline-hidden ring-zinc-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden md:col-span-2 md:h-80"
+  class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-xl ring-zinc-500 outline-hidden focus-visible:ring-3 md:col-span-2 md:h-80 dark:ring-zinc-200 dark:focus:outline-hidden"
 >
   <!-- The product's main image -->
   <Image

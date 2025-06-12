@@ -1,9 +1,10 @@
 [build]
-  command = "yarn build"
+  command = "npm install --include=optional sharp && yarn build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
+  SHARP_IGNORE_GLOBAL_LIBVIPS = "1"
 
 [[headers]]
   for = "/*"

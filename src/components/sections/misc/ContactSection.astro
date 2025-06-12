@@ -8,15 +8,14 @@
 const title: string = "Contáctanos";
 const subTitle: string =
   "En Extintores del Risaralda, estamos listos para asesorarte. Completa el formulario y nos pondremos en contacto contigo pronto.";
-
 ---
 
 <section>
-  <div >
+  <div class="mt-20 lg:mt-24">
     {/* Encabezado de la sección */}
-    <div class="text-center mb-10">
+    <div class="mb-10 text-center">
       <h1
-        class="text-balance text-2xl font-bold tracking-tight text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
+        class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
       >
         {title}
       </h1>
@@ -26,58 +25,69 @@ const subTitle: string =
     </div>
 
     {/* Contenedor del Formulario y Elemento Visual */}
-    <div class="relative bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-neutral-200 dark:border-neutral-700 overflow-hidden">
-      
-
+    <div
+      class="relative overflow-hidden rounded-xl border border-neutral-200 bg-white p-6 shadow-lg sm:p-8 lg:p-10 dark:border-neutral-700 dark:bg-neutral-800"
+    >
       {/* Formulario superpuesto al elemento visual */}
-      <div class="relative z-10 max-w-lg mx-auto"> {/* Para centrar el formulario dentro del contenedor */}
-        <h2 class="text-2xl font-semibold text-neutral-800 dark:text-neutral-200 mb-6 text-center">
+      <div class="relative z-10 mx-auto max-w-lg">
+        {/* Para centrar el formulario dentro del contenedor */}
+        <h2
+          class="mb-6 text-center text-2xl font-semibold text-neutral-800 dark:text-neutral-200"
+        >
           Envíanos un Mensaje
         </h2>
-        <form class="space-y-5"> {/* Espaciado automático entre campos */}
+        <form class="space-y-5">
+          {/* Espaciado automático entre campos */}
           <div>
-            <label for="contact-name" class="block text-neutral-700 dark:text-neutral-300 text-sm font-medium mb-2">
+            <label
+              for="contact-name"
+              class="mb-2 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            >
               Tu Nombre:
             </label>
             <input
               type="text"
               id="contact-name"
               name="name"
-              class="block w-full px-4 py-2.5 text-neutral-800 dark:text-neutral-200 bg-neutral-50 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-base"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-md border border-neutral-300 bg-neutral-50 px-4 py-2.5 text-neutral-800 shadow-sm sm:text-base dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200"
               placeholder="Escribe tu nombre completo"
               required
             />
           </div>
           <div>
-            <label for="contact-email" class="block text-neutral-700 dark:text-neutral-300 text-sm font-medium mb-2">
+            <label
+              for="contact-email"
+              class="mb-2 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            >
               Tu Email:
             </label>
             <input
               type="email"
               id="contact-email"
               name="email"
-              class="block w-full px-4 py-2.5 text-neutral-800 dark:text-neutral-200 bg-neutral-50 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-base"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-md border border-neutral-300 bg-neutral-50 px-4 py-2.5 text-neutral-800 shadow-sm sm:text-base dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200"
               placeholder="tu.email@ejemplo.com"
               required
             />
           </div>
           <div>
-            <label for="contact-message" class="block text-neutral-700 dark:text-neutral-300 text-sm font-medium mb-2">
+            <label
+              for="contact-message"
+              class="mb-2 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            >
               Mensaje:
             </label>
             <textarea
               id="contact-message"
               name="message"
               rows={6}
-              class="block w-full px-4 py-2.5 text-neutral-800 dark:text-neutral-200 bg-neutral-50 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-base resize-y"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full resize-y rounded-md border border-neutral-300 bg-neutral-50 px-4 py-2.5 text-neutral-800 shadow-sm sm:text-base dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200"
               placeholder="Detalla tu consulta aquí..."
-              required
-            ></textarea>
+              required></textarea>
           </div>
           <button
             type="submit"
-            class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 px-6 rounded-md shadow-md
-                   transition ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 text-lg"
+            class="w-full rounded-md bg-orange-500 px-6 py-3.5 text-lg font-bold text-white shadow-md transition duration-200 ease-in-out hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none"
           >
             Enviar Mensaje
           </button>

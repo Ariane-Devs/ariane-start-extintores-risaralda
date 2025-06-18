@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --include=optional sharp && yarn build"
+  command = "npm install --include=optional sharp && npm run build"
   publish = "dist"
 
 [build.environment]

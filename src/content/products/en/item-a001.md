@@ -1,15 +1,15 @@
 ---
-title: "Extintor Estándar"
-description: "Extintor Estándar"
+title: "Extintor Estándar Multipropósito (ABC)"
+description: "Extintor Estándar Multipropósito (ABC)"
 line: "Línea de control de incendios"
 main:
   id: 101
   content: |
-    Presentamos nuestro **Extintor Estándar** – la solución definitiva para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye una variedad de características clave, meticulosamente seleccionadas para afrontar cualquier tipo de incendio con eficacia y precisión.
+    Presentamos nuestro **Extintor Estándar Multipropósito (ABC)** – la solución definitiva para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye una variedad de características clave, meticulosamente seleccionadas para afrontar cualquier tipo de incendio con eficacia y precisión.
 
   imgCard: "@/images/products/a-01.avif" 
   imgMain: "@/images/products/a-01.avif" 
-  imgAlt: "Extintor de incendios rojo estándar"
+  imgAlt: "Extintor de incendios amarillo multipropósito"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

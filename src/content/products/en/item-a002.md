@@ -1,11 +1,11 @@
 ---
-title: "Extintor Fuego"
-description: "Extintor Fuego"
+title: "Extintor Fuego BC"
+description: "Extintor Fuego BC"
 line: "Línea de control de incendios"
 main:
   id: 102
   content: |
-    Presentamos nuestro **Extintor Estándar** – la solución definitiva para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye una variedad de características clave, meticulosamente seleccionadas para afrontar cualquier tipo de incendio con eficacia y precisión.
+    Presentamos nuestro **Extintor Fuego BC** – la solución definitiva para tu seguridad contra el fuego. Este equipo confiable es parte de nuestra completa **Línea de Control de Incendios** e incluye una variedad de características clave, meticulosamente seleccionadas para afrontar cualquier tipo de incendio con eficacia y precisión.
 
   imgCard: "@/images/products/a-02.avif" 
   imgMain: "@/images/products/a-02.avif" 
@@ -28,7 +28,7 @@ longDescription:
   btnURL: "#"
 descriptionList:
   - title: "Tipos de Fuego"
-    subTitle: "Eficaz contra fuegos de tipo A, B y C, ideal para incendios comunes de madera, líquidos inflamables y equipos eléctricos."
+    subTitle: "Eficaz contra fuegos de tipo B y C, ideal para incendios de líquidos y gases inflamables."
   - title: "Facilidad de Uso"
     subTitle: "Diseñado para una operación sencilla y rápida, permitiendo a cualquier usuario responder eficazmente en una emergencia."
   - title: "Mantenimiento Sencillo"

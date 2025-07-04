@@ -1,11 +1,11 @@
 ---
-title: "Extintor de Agente Limpio"
-description: "Protección Avanzada para Equipos Sensibles"
+title: "Extintor de Agua"
+description: "Extintor de Agua"
 line: "Línea de control de incendios"
 main:
   id: 105
   content: |
-    Presentamos nuestro **Extintor de Agente Limpio**, la solución más avanzada para la protección contra incendios en entornos delicados. Este equipo, parte esencial de nuestra **Línea de Control de Incendios**, utiliza un agente extintor de última generación que suprime el fuego de manera rápida y efectiva sin dejar residuos, salvaguardando tus bienes más valiosos.
+    Presentamos nuestro **Extintor de Agua**, la solución más avanzada para la protección contra incendios por elementos solidos (madera, carton, tela, algodon). Este equipo, parte esencial de nuestra **Línea de Control de Incendios**, utiliza un agente extintor de última generación que suprime el fuego de manera rápida y efectiva sin dejar residuos, salvaguardando tus bienes más valiosos.
 
   imgCard: "@/images/products/a-05.avif" 
   imgMain: "@/images/products/a-05.avif"
@@ -23,7 +23,7 @@ tabs:
 longDescription:
   title: "Seguridad Sin Compromisos ni Daños Colaterales"
   subTitle: |
-    El Extintor de Agente Limpio de Extintores del Risaralda es la elección predilecta para áreas con equipos electrónicos, archivos irremplazables, laboratorios o salas de servidores. Su agente no conductor y de rápida evaporación garantiza una extinción eficaz sin dañar componentes ni dejar rastro, permitiendo la reanudación de operaciones casi de inmediato. Es la inversión inteligente para la continuidad de tu negocio.
+    El Extintor de Agua de Extintores del Risaralda es la elección predilecta para áreas con equipos electrónicos, archivos irremplazables, laboratorios o salas de servidores. Su agente no conductor y de rápida evaporación garantiza una extinción eficaz sin dañar componentes ni dejar rastro, permitiendo la reanudación de operaciones casi de inmediato. Es la inversión inteligente para la continuidad de tu negocio.
   btnTitle: "Consulta un experto para tu solución"
   btnURL: "#"
 descriptionList:

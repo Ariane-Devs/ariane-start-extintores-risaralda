@@ -1,6 +1,6 @@
 ---
 title: "Extintor de CO2"
-description: "Agente Limpio para Fuegos Eléctricos y Líquidos"
+description: "Extintor de CO2"
 line: "Línea de control de incendios"
 main:
   id: 107

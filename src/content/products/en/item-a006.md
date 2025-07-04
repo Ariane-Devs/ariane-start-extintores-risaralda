@@ -1,6 +1,6 @@
 ---
 title: "Extintor Satélite"
-description: "Unidad Móvil de Alta Capacidad para Grandes Áreas"
+description: "Extintor Satélite de Alta Capacidad para Grandes Áreas"
 line: "Línea de control de incendios"
 main:
   id: 106

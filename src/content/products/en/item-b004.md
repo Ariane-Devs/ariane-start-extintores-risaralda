@@ -1,6 +1,6 @@
 ---
-title: "Kit de Primeros Auxilios Completo en Formato Portátil"
-description: "Botiquín Morral para Brigadista"
+title: "Botiquín para Brigadista con dotación (Maletin o Morral)"
+description: "Botiquín para Brigadista (Maletin o Morral)"
 line: "Línea de primeros auxilios"
 main:
   id: 204

@@ -1,11 +1,11 @@
 ---
 title: "Gabinete Metálico para Extintor (10 lb)"
 description: "Gabinete Metálico para Extintor"
-line: "Línea de control de incendios"
+line: "Línea de primeros auxilios"
 main:
   id: 212
   content: |
-    Presentamos nuestro **Gabinete Metálico para Extintor de 10 lb** – la solución ideal para proteger y señalizar adecuadamente tus equipos contra incendios. Parte vital de nuestra **Línea de Control de Incendios**, este gabinete no solo resguarda tu extintor de daños y vandalismo, sino que también asegura su visibilidad y fácil acceso en caso de emergencia, incluyendo el servicio de instalación profesional.
+    Presentamos nuestro **Gabinete Metálico para Extintor de 10 lb** – la solución ideal para proteger y señalizar adecuadamente tus equipos contra incendios. Parte vital de nuestra **Línea de primeros auxilios**, este gabinete no solo resguarda tu extintor de daños y vandalismo, sino que también asegura su visibilidad y fácil acceso en caso de emergencia, incluyendo el servicio de instalación profesional.
 
   imgCard: "@/images/products/b-12.avif"
   imgMain: "@/images/products/b-12.avif"

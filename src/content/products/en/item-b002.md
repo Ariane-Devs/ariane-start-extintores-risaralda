@@ -1,6 +1,6 @@
 ---
 title: "Kit Completo para Emergencias y Cuidado Básico"
-description: "Botiquín de Primeros Auxilios Esencial "
+description: "Botiquines (18, 15, y 12 elementos)"
 line: "Línea de primeros auxilios"
 main:
   id: 202

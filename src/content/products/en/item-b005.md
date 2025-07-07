@@ -1,6 +1,6 @@
 ---
 title: "Kit Básico Esencial para Primeros Auxilios"
-description: "Botiquín Tipo A"
+description: "Botiquín Tipo A (14 productos)"
 line: "Línea de primeros auxilios"
 main:
   id: 205

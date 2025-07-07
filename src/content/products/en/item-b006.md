@@ -1,6 +1,6 @@
 ---
 title: "Kit de Primeros Auxilios Extendido para Emergencias Completas"
-description: "Botiquín Tipo B"
+description: "Botiquín Tipo B (59 productos)"
 line: "Línea de primeros auxilios"
 main:
   id: 206

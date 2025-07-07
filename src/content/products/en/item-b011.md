@@ -1,15 +1,15 @@
 ---
-title: "Botiquín Caja Plástica Rimax"
-description: "Estuche Resistente y Práctico para Primeros Auxilios"
+title: "Botiquín industrial"
+description: "Botiquín industrial con dotación"
 line: "Línea de primeros auxilios"
 main:
   id: 211
   content: |
-    Presentamos nuestro **Botiquín Caja Plástica Rimax** – la solución robusta y confiable para almacenar tus insumos de primeros auxilios. Parte esencial de nuestra **Línea de Primeros Auxilios**, este estuche de alta resistencia, fabricado por Rimax, protege tu dotación del polvo y la humedad, asegurando que esté siempre lista para cualquier emergencia.
+    Presentamos nuestro **Botiquín industrial** – la solución robusta y confiable para almacenar tus insumos de primeros auxilios. Parte esencial de nuestra **Línea de Primeros Auxilios**, este Botiquín industrial de alta resistencia, protege tu dotación del polvo y la humedad, asegurando que esté siempre lista para cualquier emergencia.
 
   imgCard: "@/images/products/b-11.avif"
   imgMain: "@/images/products/b-11.avif"
-  imgAlt: "Botiquín Caja Plástica Rimax"
+  imgAlt: "Botiquín industrial"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -23,7 +23,7 @@ tabs:
 longDescription:
   title: "Durabilidad y Protección para tu Kit de Emergencia"
   subTitle: |
-    El Botiquín Caja Plástica Rimax de Extintores del Risaralda es la elección ideal para quienes buscan una solución duradera y fácil de mantener. Su construcción en plástico de alta calidad lo hace resistente a golpes y vertidos, perfecto para vehículos, talleres, hogares, pequeñas oficinas o cualquier lugar donde la protección del contenido sea primordial.
+    El Botiquín industrial de Extintores del Risaralda es la elección ideal para quienes buscan una solución duradera y fácil de mantener. Su construcción en plástico de alta calidad lo hace resistente a golpes y vertidos, perfecto para vehículos, talleres, hogares, pequeñas oficinas o cualquier lugar donde la protección del contenido sea primordial.
   btnTitle: "Adquiere tu Botiquín Plástico Rimax"
   btnURL: "#"
 descriptionList:

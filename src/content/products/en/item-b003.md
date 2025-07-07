@@ -1,6 +1,6 @@
 ---
 title: "Kit Completo para Emergencias y Cuidado Básico"
-description: "Botiquín de Primeros Auxilios Basico"
+description: "Botiquín morral en lona con dotación"
 line: "Línea de primeros auxilios"
 main:
   id: 203

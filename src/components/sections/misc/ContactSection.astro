@@ -12,6 +12,9 @@ const subTitle: string =
   "En Extintores del Risaralda, estamos listos para asesorarte. Completa el formulario y nos pondremos en contacto contigo pronto.";
 const formTitle: string = "Completa el formulario";
 const formSubTitle: string = "Te responderemos en 1 a 2 días hábiles.";
+
+// Get reCAPTCHA site key from environment variables
+const recaptchaSiteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
 ---
 
 <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
@@ -37,36 +40,63 @@ const formSubTitle: string = "Te responderemos en 1 a 2 días hábiles.";
         </h2>
 
         {/* Formulario con componentes de entrada consistentes */}
-        <form>
+        <form id="contact-form">
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="contact-firstname"
                 label="Nombre"
                 name="firstname"
+                required
               />
               <TextInput
                 id="contact-lastname"
                 label="Apellido"
                 name="lastname"
+                required
               />
             </div>
-            <EmailContactInput id="contact-email" />
+            <EmailContactInput id="contact-email" required />
             <PhoneInput id="contact-phone" />
             <TextAreaInput
               id="contact-message"
               label="Mensaje"
               name="message"
+              required
             />
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Enviar Mensaje" />
+            <button
+              type="submit"
+              class="inline-flex w-full justify-center rounded-lg bg-yellow-400 px-4 py-3 text-sm font-medium text-neutral-700 ring-zinc-500 transition duration-300 hover:bg-yellow-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:text-neutral-900"
+            >
+              Enviar Mensaje
+            </button>
           </div>
 
           <div class="mt-3 text-center">
             <p class="text-sm text-neutral-600 dark:text-neutral-400">
               {formSubTitle}
+            </p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-500">
+              Este sitio está protegido por reCAPTCHA y aplican la
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener"
+                class="text-yellow-600 hover:text-yellow-700 dark:text-yellow-400 dark:hover:text-yellow-300"
+              >
+                Política de Privacidad
+              </a> y los
+              <a
+                href="https://policies.google.com/terms"
+                target="_blank"
+                rel="noopener"
+                class="text-yellow-600 hover:text-yellow-700 dark:text-yellow-400 dark:hover:text-yellow-300"
+              >
+                Términos de Servicio
+              </a> de Google.
             </p>
           </div>
         </form>
@@ -212,3 +242,257 @@ const formSubTitle: string = "Te responderemos en 1 a 2 días hábiles.";
     </div>
   </div>
 </section>
+
+{/* Add reCAPTCHA site key to meta for JavaScript access */}
+{
+  recaptchaSiteKey && (
+    <meta name="recaptcha-site-key" content={recaptchaSiteKey} />
+  )
+}
+
+{/* Include contact form JavaScript */}
+<script is:inline>
+  console.log("ContactSection script loaded");
+
+  // reCAPTCHA utility class
+  class RecaptchaV3 {
+    constructor(siteKey) {
+      this.siteKey = siteKey;
+      this.scriptLoaded = false;
+      this.grecaptcha = null;
+      console.log("RecaptchaV3 initialized with site key:", siteKey);
+    }
+
+    async loadScript() {
+      if (this.scriptLoaded) {
+        console.log("reCAPTCHA script already loaded");
+        return;
+      }
+
+      console.log("Loading reCAPTCHA script...");
+      return new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = `https://www.google.com/recaptcha/api.js?render=${this.siteKey}`;
+        script.async = true;
+        script.defer = true;
+
+        script.onload = () => {
+          console.log("reCAPTCHA script loaded successfully");
+          this.scriptLoaded = true;
+          this.grecaptcha = window.grecaptcha;
+          resolve();
+        };
+
+        script.onerror = () => {
+          console.error("Failed to load reCAPTCHA script");
+          reject(new Error("Failed to load reCAPTCHA script"));
+        };
+
+        document.head.appendChild(script);
+      });
+    }
+
+    async getToken(action = "contact_form") {
+      console.log("Getting reCAPTCHA token for action:", action);
+
+      if (!this.scriptLoaded) {
+        await this.loadScript();
+      }
+
+      return new Promise((resolve, reject) => {
+        this.grecaptcha.ready(() => {
+          console.log("reCAPTCHA ready, executing...");
+          this.grecaptcha
+            .execute(this.siteKey, { action })
+            .then((token) => {
+              console.log(
+                "reCAPTCHA token generated:",
+                token.substring(0, 20) + "..."
+              );
+              resolve(token);
+            })
+            .catch((error) => {
+              console.error("Error generating reCAPTCHA token:", error);
+              reject(error);
+            });
+        });
+      });
+    }
+  }
+
+  // Show message function
+  function showMessage(message, type = "info") {
+    console.log("Showing message:", message, "Type:", type);
+
+    const existingMessage = document.querySelector(".form-message");
+    if (existingMessage) {
+      console.log("Removing existing message");
+      existingMessage.remove();
+    }
+
+    const messageDiv = document.createElement("div");
+
+    let messageClass;
+    if (type === "success") {
+      messageClass =
+        "bg-green-100 text-green-800 border border-green-200 dark:bg-green-900 dark:text-green-200 dark:border-green-700";
+    } else if (type === "error") {
+      messageClass =
+        "bg-red-100 text-red-800 border border-red-200 dark:bg-red-900 dark:text-red-200 dark:border-red-700";
+    } else {
+      messageClass =
+        "bg-blue-100 text-blue-800 border border-blue-200 dark:bg-blue-900 dark:text-blue-200 dark:border-blue-700";
+    }
+
+    messageDiv.className = `form-message mt-4 p-4 rounded-lg ${messageClass}`;
+    messageDiv.textContent = message;
+
+    const form = document.getElementById("contact-form");
+    if (form) {
+      console.log("Inserting message after form");
+      form.parentNode.insertBefore(messageDiv, form.nextSibling);
+
+      setTimeout(() => {
+        if (messageDiv.parentNode) {
+          console.log("Auto-removing message");
+          messageDiv.remove();
+        }
+      }, 5000);
+    } else {
+      console.error("Form not found for message insertion");
+    }
+  }
+
+  // Initialize when DOM is loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM loaded, initializing contact form...");
+
+    const siteKeyMeta = document.querySelector(
+      'meta[name="recaptcha-site-key"]'
+    );
+    console.log("Site key meta found:", !!siteKeyMeta);
+
+    const isDevelopment =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1";
+    console.log("Development mode:", isDevelopment);
+
+    let recaptcha = null;
+
+    if (!isDevelopment && siteKeyMeta) {
+      const siteKey = siteKeyMeta.getAttribute("content");
+      console.log("Initializing reCAPTCHA with site key:", siteKey);
+      recaptcha = new RecaptchaV3(siteKey);
+    } else if (isDevelopment) {
+      console.log("Development mode: reCAPTCHA disabled");
+    } else {
+      console.warn("reCAPTCHA site key not found");
+    }
+
+    const contactForm = document.getElementById("contact-form");
+    console.log("Contact form found:", !!contactForm);
+
+    if (contactForm) {
+      console.log("Adding submit event listener to contact form");
+
+      contactForm.addEventListener("submit", async function (e) {
+        console.log("=== FORM SUBMIT EVENT TRIGGERED ===");
+        e.preventDefault();
+        console.log("Default form submission prevented");
+
+        try {
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          console.log("Submit button found:", !!submitBtn);
+
+          if (submitBtn) {
+            console.log("Setting button to loading state");
+            submitBtn.textContent = "Enviando...";
+            submitBtn.disabled = true;
+          }
+
+          let token = null;
+
+          if (!isDevelopment && recaptcha) {
+            console.log("Getting reCAPTCHA token...");
+            token = await recaptcha.getToken("contact_form");
+            console.log("reCAPTCHA token received");
+          } else {
+            console.log(
+              "Development mode: Skipping reCAPTCHA token generation"
+            );
+          }
+
+          console.log("Preparing form data...");
+          const formData = new FormData(contactForm);
+
+          for (let [key, value] of formData.entries()) {
+            console.log(`Form field - ${key}:`, value);
+          }
+
+          if (token) {
+            formData.append("recaptcha_token", token);
+            console.log("reCAPTCHA token added to form data");
+          }
+
+          console.log("Submitting form to API...");
+          const response = await fetch("/api/contact", {
+            method: "POST",
+            body: formData,
+          });
+
+          console.log("API response status:", response.status);
+          console.log("API response ok:", response.ok);
+
+          const result = await response.json();
+          console.log("API response data:", result);
+
+          if (result.success) {
+            console.log("Form submission successful");
+            showMessage(result.message, "success");
+            contactForm.reset();
+            console.log("Form reset");
+          } else {
+            console.log("Form submission failed:", result.message);
+            showMessage(result.message, "error");
+          }
+        } catch (error) {
+          console.error("Error submitting form:", error);
+          showMessage(
+            "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+            "error"
+          );
+        } finally {
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          if (submitBtn) {
+            console.log("Resetting button state");
+            submitBtn.textContent = "Enviar Mensaje";
+            submitBtn.disabled = false;
+          }
+        }
+      });
+
+      console.log("Contact form event listener added successfully");
+    } else {
+      console.error("Contact form not found!");
+    }
+  });
+</script>
+
+{/* Debug script to verify loading */}
+<script is:inline>
+  console.log("Debug script loaded");
+
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Debug: DOM loaded in ContactSection");
+    const form = document.getElementById("contact-form");
+    console.log("Debug: Form found:", !!form);
+
+    if (form) {
+      console.log("Debug: Form element:", form);
+
+      form.addEventListener("submit", function (e) {
+        console.log("Debug: Form submit event caught by backup listener");
+      });
+    }
+  });
+</script>

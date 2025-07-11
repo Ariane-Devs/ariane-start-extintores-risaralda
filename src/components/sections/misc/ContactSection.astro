@@ -320,6 +320,59 @@ const recaptchaSiteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
     }
   }
 
+  // Función de validación del formulario
+  function validateForm(form) {
+    const formData = new FormData(form);
+    const firstname = formData.get("firstname")?.toString().trim() || "";
+    const lastname = formData.get("lastname")?.toString().trim() || "";
+    const email = formData.get("email")?.toString().trim() || "";
+    const phone = formData.get("phone")?.toString().trim() || "";
+    const message = formData.get("message")?.toString().trim() || "";
+
+    // Validar que ningún campo esté vacío
+    if (!firstname) {
+      return { isValid: false, message: "El nombre es obligatorio." };
+    }
+    if (!lastname) {
+      return { isValid: false, message: "El apellido es obligatorio." };
+    }
+    if (!email) {
+      return { isValid: false, message: "El email es obligatorio." };
+    }
+    if (!phone) {
+      return { isValid: false, message: "El teléfono es obligatorio." };
+    }
+    if (!message) {
+      return { isValid: false, message: "El mensaje es obligatorio." };
+    }
+
+    // Validar formato de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return { isValid: false, message: "Por favor, ingresa un email válido." };
+    }
+
+    // Validar teléfono (exactamente 10 dígitos)
+    const phoneRegex = /^\d{10}$/;
+    const phoneDigits = phone.replace(/\D/g, ""); // Remover cualquier carácter que no sea dígito
+    if (!phoneRegex.test(phoneDigits)) {
+      return {
+        isValid: false,
+        message: "El teléfono debe tener exactamente 10 dígitos.",
+      };
+    }
+
+    // Validar longitud mínima del mensaje
+    if (message.length < 10) {
+      return {
+        isValid: false,
+        message: "El mensaje debe tener al menos 10 caracteres.",
+      };
+    }
+
+    return { isValid: true, message: "" };
+  }
+
   // Show message function
   function showMessage(message, type = "info") {
     console.log("Showing message:", message, "Type:", type);
@@ -400,6 +453,13 @@ const recaptchaSiteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
         e.preventDefault();
         console.log("Default form submission prevented");
 
+        // Validaciones del formulario
+        const validationResult = validateForm(contactForm);
+        if (!validationResult.isValid) {
+          showMessage(validationResult.message, "error");
+          return;
+        }
+
         try {
           const submitBtn = contactForm.querySelector('button[type="submit"]');
           console.log("Submit button found:", !!submitBtn);
@@ -448,9 +508,14 @@ const recaptchaSiteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
 
           if (result.success) {
             console.log("Form submission successful");
-            showMessage(result.message, "success");
             contactForm.reset();
             console.log("Form reset");
+            // Show success modal instead of message
+            if (window.showSuccessModal) {
+              window.showSuccessModal();
+            } else {
+              showMessage(result.message, "success");
+            }
           } else {
             console.log("Form submission failed:", result.message);
             showMessage(result.message, "error");
@@ -472,8 +537,128 @@ const recaptchaSiteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
       });
 
       console.log("Contact form event listener added successfully");
+
+      // Agregar validación en tiempo real
+      addRealTimeValidation(contactForm);
     } else {
       console.error("Contact form not found!");
+    }
+
+    // Función para agregar validación en tiempo real
+    function addRealTimeValidation(form) {
+      const inputs = form.querySelectorAll("input, textarea");
+
+      inputs.forEach((input) => {
+        // Validar al perder el foco
+        input.addEventListener("blur", function () {
+          validateField(this);
+        });
+
+        // Validar mientras se escribe (con debounce)
+        let timeoutId;
+        input.addEventListener("input", function () {
+          clearTimeout(timeoutId);
+          timeoutId = setTimeout(() => {
+            validateField(this);
+          }, 500);
+        });
+      });
+    }
+
+    function validateField(field) {
+      const value = field.value.trim();
+      const fieldName = field.name;
+      let isValid = true;
+      let message = "";
+
+      // Remover mensajes de error previos
+      removeFieldError(field);
+
+      switch (fieldName) {
+        case "firstname":
+        case "lastname":
+          if (!value) {
+            isValid = false;
+            message = `${fieldName === "firstname" ? "El nombre" : "El apellido"} es obligatorio.`;
+          }
+          break;
+
+        case "email":
+          if (!value) {
+            isValid = false;
+            message = "El email es obligatorio.";
+          } else {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(value)) {
+              isValid = false;
+              message = "Por favor, ingresa un email válido.";
+            }
+          }
+          break;
+
+        case "phone":
+          if (!value) {
+            isValid = false;
+            message = "El teléfono es obligatorio.";
+          } else {
+            const phoneDigits = value.replace(/\D/g, "");
+            if (phoneDigits.length !== 10) {
+              isValid = false;
+              message = "El teléfono debe tener exactamente 10 dígitos.";
+            }
+          }
+          break;
+
+        case "message":
+          if (!value) {
+            isValid = false;
+            message = "El mensaje es obligatorio.";
+          } else if (value.length < 10) {
+            isValid = false;
+            message = "El mensaje debe tener al menos 10 caracteres.";
+          }
+          break;
+      }
+
+      if (!isValid) {
+        showFieldError(field, message);
+      } else {
+        // Agregar clase de campo válido si no hay errores
+        field.classList.add("valid");
+      }
+    }
+
+    function showFieldError(field, message) {
+      const errorDiv = document.createElement("div");
+      errorDiv.className =
+        "field-error mt-1 text-sm text-red-600 dark:text-red-400";
+      errorDiv.textContent = message;
+      errorDiv.id = `error-${field.id}`;
+
+      // Agregar clase de error al campo
+      field.classList.add(
+        "border-red-500",
+        "focus:border-red-500",
+        "focus:ring-red-500"
+      );
+
+      // Insertar el mensaje después del campo
+      field.parentNode.insertBefore(errorDiv, field.nextSibling);
+    }
+
+    function removeFieldError(field) {
+      const errorDiv = document.getElementById(`error-${field.id}`);
+      if (errorDiv) {
+        errorDiv.remove();
+      }
+
+      // Remover clases de error y válido
+      field.classList.remove(
+        "border-red-500",
+        "focus:border-red-500",
+        "focus:ring-red-500",
+        "valid"
+      );
     }
   });
 </script>
@@ -496,3 +681,177 @@ const recaptchaSiteKey = import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY;
     }
   });
 </script>
+
+<!-- Modal de confirmación de envío exitoso -->
+<div
+  id="success-modal"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/20 backdrop-blur-sm"
+>
+  <div
+    class="relative mx-4 w-full max-w-md transform rounded-2xl bg-white p-6 shadow-2xl transition-all dark:bg-neutral-800"
+  >
+    <!-- Botón de cerrar -->
+    <button
+      id="close-modal"
+      class="absolute top-4 right-4 text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300"
+      aria-label="Cerrar modal"
+    >
+      <svg
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <!-- Icono de éxito -->
+    <div
+      class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/20"
+    >
+      <svg
+        class="h-8 w-8 text-green-600 dark:text-green-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 13l4 4L19 7"></path>
+      </svg>
+    </div>
+
+    <!-- Contenido del modal -->
+    <div class="mt-4 text-center">
+      <h3 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+        ¡Mensaje enviado exitosamente!
+      </h3>
+      <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Gracias por contactarnos. Hemos recibido tu mensaje y nos pondremos en
+        contacto contigo muy pronto.
+      </p>
+      <p class="mt-1 text-xs text-neutral-500 dark:text-neutral-500">
+        Tiempo estimado de respuesta: 1-2 días hábiles
+      </p>
+    </div>
+
+    <!-- Botón de cerrar -->
+    <div class="mt-6">
+      <button
+        id="close-modal-btn"
+        class="w-full rounded-lg bg-green-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:outline-none dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-offset-neutral-800"
+      >
+        Entendido
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  // Modal functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const successModal = document.getElementById("success-modal");
+    const closeModalBtn = document.getElementById("close-modal-btn");
+    const closeModal = document.getElementById("close-modal");
+
+    if (successModal) {
+      console.log("Success modal found");
+
+      // Close modal function
+      function closeModalFunc() {
+        console.log("Closing modal");
+        successModal.classList.add("hidden");
+        successModal.classList.remove("flex");
+      }
+
+      // Event listeners to close the modal
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener("click", closeModalFunc);
+      }
+
+      if (closeModal) {
+        closeModal.addEventListener("click", closeModalFunc);
+      }
+
+      // Close modal when clicking on overlay (background)
+      successModal.addEventListener("click", function (e) {
+        if (e.target === successModal) {
+          closeModalFunc();
+        }
+      });
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !successModal.classList.contains("hidden")) {
+          closeModalFunc();
+        }
+      });
+
+      // Show modal function
+      window.showSuccessModal = function () {
+        console.log("Showing success modal");
+        successModal.classList.remove("hidden");
+        successModal.classList.add("flex");
+      };
+    } else {
+      console.warn("Success modal not found");
+    }
+  });
+</script>
+
+<style>
+  /* Estilos para la validación del formulario */
+  .field-error {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Estilos mejorados para campos con error */
+  input.border-red-500,
+  textarea.border-red-500 {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+  }
+
+  /* Mejoras visuales para el formulario */
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.5);
+  }
+
+  /* Indicador visual para campos válidos */
+  input.valid,
+  textarea.valid {
+    border-color: #10b981;
+  }
+</style>
